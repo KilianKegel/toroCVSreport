@@ -2,7 +2,7 @@
 toro C-Validation-Suite report
 
 ## math.h
-[**acos()**]()<br>
+[**acos()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/acos.html)<br>
 [**asin()**]()<br>
 [**atan()**]()<br>
 [**atan2()**]()<br>
