@@ -1,0 +1,1501 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+.AlignLeft { text-align: left; }
+.AlignCenter { text-align: center; }
+.AlignRight { text-align: right; }
+.Wrap { white-space: nowrap; }
+body { font-family: sans-serif; font-size: 11pt; }
+img.AutoScale { max-width: 100%; max-height: 100%; }
+td { vertical-align: top; padding-left: 4px; padding-right: 4px; }
+
+tr.SectionGap td { font-size: 4px; border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionBegin td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionMiddle td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SubsectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.SubsectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+table.fc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: monospace; font-size: 10pt; }
+td.TextItemInsigMod { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigOrphan { color: #000000; background-color: #FAEEFF; }
+td.TextItemNum { color: #696969; background-color: #F0F0F0; }
+td.TextItemSame { color: #000000; background-color: #FFFFFF; }
+td.TextItemSigMod { color: #000000; background-color: #FFE8E8; }
+td.TextItemSigOrphan { color: #000000; background-color: #F1E3FF; }
+.TextSegInsigDiff { color: #0000FF; }
+.TextSegReplacedDiff { color: #0000FF; font-style: italic; }
+.TextSegSigDiff { color: #FF0000; }
+td.TextItemInsigAdd { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigDel { color: #000000; background-color: #EEEEFF; text-decoration: line-through; }
+td.TextItemSigAdd { color: #000000; background-color: #FFE8E8; }
+td.TextItemSigDel { color: #000000; background-color: #FFE8E8; text-decoration: line-through; }
+</style>
+<title>fmod(): toro C Library vs. Microsoft C Library</title>
+</head>
+<body>
+fmod(): toro C Library vs. Microsoft C Library<br>
+Produced: 8/30/2025 3:37:06 PM<br>
+&nbsp; &nbsp;
+<br>
+Mode:&nbsp; Differences, With Context &nbsp;
+<br>
+Left file: R:\toroCVS\x64\toroWindows\fmod.-.log&nbsp; &nbsp;&nbsp; Right file: R:\toroCVS\x64\msftWindows\fmod.-.log &nbsp;
+<br>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">1</td>
+<td class="TextItemSame Wrap">############################################################################</td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">1</td>
+<td class="TextItemSame Wrap">############################################################################</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">2</td>
+<td class="TextItemSame Wrap">### toroCVS: fmod() ######################################################</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">2</td>
+<td class="TextItemSame Wrap">### toroCVS: fmod() ######################################################</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">3</td>
+<td class="TextItemSame Wrap">############################################################################</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">3</td>
+<td class="TextItemSame Wrap">############################################################################</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">4</td>
+<td class="TextItemSigMod Wrap">COMMANDLINE: R:\toroCVS\x64\t<span class="TextSegSigDiff">oro</span>Windows\fmod /log /logfull&nbsp;</td>
+<td class="AlignCenter Wrap">&lt;&gt;</td>
+<td class="TextItemNum AlignRight Wrap">4</td>
+<td class="TextItemSigMod Wrap">COMMANDLINE: R:\toroCVS\x64\<span class="TextSegSigDiff">msf</span>tWindows\fmod /log /logfull&nbsp;</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">5</td>
+<td class="TextItemSame Wrap">### __abort_behavior: 2</td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">5</td>
+<td class="TextItemSame Wrap">### __abort_behavior: 2</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">6</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 1: fmod(0x0000000000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">6</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 1: fmod(0x0000000000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">7</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 2: fmod(0x0000000000000001, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">7</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 2: fmod(0x0000000000000001, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">8</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 3: fmod(0x0000000000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">8</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 3: fmod(0x0000000000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">9</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 4: fmod(0x0000000000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">9</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 4: fmod(0x0000000000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">10</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 5: fmod(0x000FFFFFFFFFFFFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">10</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 5: fmod(0x000FFFFFFFFFFFFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">11</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 6: fmod(0x0005555555555555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">11</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 6: fmod(0x0005555555555555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">12</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 7: fmod(0x000AAAAAAAAAAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">12</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 7: fmod(0x000AAAAAAAAAAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">13</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 8: fmod(0x000FFFFFFFFFFFFE, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">13</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 8: fmod(0x000FFFFFFFFFFFFE, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">14</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 9: fmod(0x0005555555555554, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">14</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 9: fmod(0x0005555555555554, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">15</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 10: fmod(0x000AAAAAAAAAAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">15</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 10: fmod(0x000AAAAAAAAAAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">16</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 11: fmod(0x0000000000000001, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">16</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 11: fmod(0x0000000000000001, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">17</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 12: fmod(0x0000000000000002, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">17</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 12: fmod(0x0000000000000002, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">18</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 13: fmod(0x0000000000000001, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">18</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 13: fmod(0x0000000000000001, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">19</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 14: fmod(0x0000000000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">19</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 14: fmod(0x0000000000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">20</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 15: fmod(0x000FFFFFFFFFFFFE, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">20</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 15: fmod(0x000FFFFFFFFFFFFE, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">21</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 16: fmod(0x0005555555555554, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">21</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 16: fmod(0x0005555555555554, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">22</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 17: fmod(0x000AAAAAAAAAAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">22</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 17: fmod(0x000AAAAAAAAAAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">23</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 18: fmod(0x000FFFFFFFFFFFFD, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">23</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 18: fmod(0x000FFFFFFFFFFFFD, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">24</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 19: fmod(0x0005555555555555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">24</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 19: fmod(0x0005555555555555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">25</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 20: fmod(0x000AAAAAAAAAAAA8, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">25</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 20: fmod(0x000AAAAAAAAAAAA8, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">26</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 21: fmod(0x0000000000000007, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">26</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 21: fmod(0x0000000000000007, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">27</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 22: fmod(0x0000000000000008, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">27</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 22: fmod(0x0000000000000008, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">28</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 23: fmod(0x0000000000000005, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">28</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 23: fmod(0x0000000000000005, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">29</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 24: fmod(0x0000000000000002, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">29</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 24: fmod(0x0000000000000002, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">30</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 25: fmod(0x000FFFFFFFFFFFF8, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">30</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 25: fmod(0x000FFFFFFFFFFFF8, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">31</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 26: fmod(0x0005555555555550, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">31</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 26: fmod(0x0005555555555550, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">32</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 27: fmod(0x000AAAAAAAAAAAA8, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">32</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 27: fmod(0x000AAAAAAAAAAAA8, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">33</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 28: fmod(0x000FFFFFFFFFFFF7, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">33</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 28: fmod(0x000FFFFFFFFFFFF7, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">34</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 29: fmod(0x0005555555555555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">34</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 29: fmod(0x0005555555555555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">35</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 30: fmod(0x000AAAAAAAAAAAA2, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">35</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 30: fmod(0x000AAAAAAAAAAAA2, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">36</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 31: fmod(0x000000000000003F, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">36</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 31: fmod(0x000000000000003F, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">37</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 32: fmod(0x0000000000000040, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">37</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 32: fmod(0x0000000000000040, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">38</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 33: fmod(0x0000000000000015, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">38</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 33: fmod(0x0000000000000015, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">39</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 34: fmod(0x000000000000002A, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">39</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 34: fmod(0x000000000000002A, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">40</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 35: fmod(0x000FFFFFFFFFFFC0, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">40</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 35: fmod(0x000FFFFFFFFFFFC0, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">41</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 36: fmod(0x0005555555555540, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">41</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 36: fmod(0x0005555555555540, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">42</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 37: fmod(0x000AAAAAAAAAAA80, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">42</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 37: fmod(0x000AAAAAAAAAAA80, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">43</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 38: fmod(0x000FFFFFFFFFFFBF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">43</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 38: fmod(0x000FFFFFFFFFFFBF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">44</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 39: fmod(0x0005555555555515, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">44</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 39: fmod(0x0005555555555515, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">45</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 40: fmod(0x000AAAAAAAAAAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">45</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 40: fmod(0x000AAAAAAAAAAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">46</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 41: fmod(0x00000000000003FF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">46</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 41: fmod(0x00000000000003FF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">47</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 42: fmod(0x0000000000000400, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">47</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 42: fmod(0x0000000000000400, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">48</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 43: fmod(0x0000000000000155, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">48</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 43: fmod(0x0000000000000155, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">49</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 44: fmod(0x00000000000002AA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">49</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 44: fmod(0x00000000000002AA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">50</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 45: fmod(0x000FFFFFFFFFFC00, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">50</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 45: fmod(0x000FFFFFFFFFFC00, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">51</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 46: fmod(0x0005555555555400, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">51</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 46: fmod(0x0005555555555400, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">52</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 47: fmod(0x000AAAAAAAAAA800, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">52</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 47: fmod(0x000AAAAAAAAAA800, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">53</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 48: fmod(0x000FFFFFFFFFFBFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">53</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 48: fmod(0x000FFFFFFFFFFBFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">54</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 49: fmod(0x0005555555555155, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">54</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 49: fmod(0x0005555555555155, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">55</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 50: fmod(0x000AAAAAAAAAAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">55</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 50: fmod(0x000AAAAAAAAAAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">56</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 51: fmod(0x0000000000007FFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">56</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 51: fmod(0x0000000000007FFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">57</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 52: fmod(0x0000000000008000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">57</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 52: fmod(0x0000000000008000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">58</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 53: fmod(0x0000000000005555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">58</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 53: fmod(0x0000000000005555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">59</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 54: fmod(0x0000000000002AAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">59</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 54: fmod(0x0000000000002AAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">60</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 55: fmod(0x000FFFFFFFFF8000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">60</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 55: fmod(0x000FFFFFFFFF8000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">61</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 56: fmod(0x0005555555550000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">61</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 56: fmod(0x0005555555550000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">62</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 57: fmod(0x000AAAAAAAAA8000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">62</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 57: fmod(0x000AAAAAAAAA8000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">63</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 58: fmod(0x000FFFFFFFFF7FFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">63</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 58: fmod(0x000FFFFFFFFF7FFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">64</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 59: fmod(0x0005555555555555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">64</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 59: fmod(0x0005555555555555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">65</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 60: fmod(0x000AAAAAAAAA2AAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">65</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 60: fmod(0x000AAAAAAAAA2AAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">66</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 61: fmod(0x00000000001FFFFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">66</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 61: fmod(0x00000000001FFFFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">67</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 62: fmod(0x0000000000200000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">67</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 62: fmod(0x0000000000200000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">68</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 63: fmod(0x0000000000155555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">68</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 63: fmod(0x0000000000155555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">69</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 64: fmod(0x00000000000AAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">69</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 64: fmod(0x00000000000AAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">70</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 65: fmod(0x000FFFFFFFE00000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">70</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 65: fmod(0x000FFFFFFFE00000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">71</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 66: fmod(0x0005555555400000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">71</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 66: fmod(0x0005555555400000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">72</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 67: fmod(0x000AAAAAAAA00000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">72</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 67: fmod(0x000AAAAAAAA00000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">73</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 68: fmod(0x000FFFFFFFDFFFFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">73</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 68: fmod(0x000FFFFFFFDFFFFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">74</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 69: fmod(0x0005555555555555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">74</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 69: fmod(0x0005555555555555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">75</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 70: fmod(0x000AAAAAAA8AAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">75</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 70: fmod(0x000AAAAAAA8AAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">76</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 71: fmod(0x000000000FFFFFFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">76</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 71: fmod(0x000000000FFFFFFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">77</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 72: fmod(0x0000000010000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">77</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 72: fmod(0x0000000010000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">78</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 73: fmod(0x0000000005555555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">78</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 73: fmod(0x0000000005555555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">79</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 74: fmod(0x000000000AAAAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">79</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 74: fmod(0x000000000AAAAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">80</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 75: fmod(0x000FFFFFF0000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">80</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 75: fmod(0x000FFFFFF0000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">81</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 76: fmod(0x0005555550000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">81</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 76: fmod(0x0005555550000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">82</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 77: fmod(0x000AAAAAA0000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">82</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 77: fmod(0x000AAAAAA0000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">83</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 78: fmod(0x000FFFFFEFFFFFFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">83</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 78: fmod(0x000FFFFFEFFFFFFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">84</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 79: fmod(0x0005555545555555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">84</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 79: fmod(0x0005555545555555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">85</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 80: fmod(0x000AAAAAAAAAAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">85</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 80: fmod(0x000AAAAAAAAAAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">86</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 81: fmod(0x0000000FFFFFFFFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">86</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 81: fmod(0x0000000FFFFFFFFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">87</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 82: fmod(0x0000001000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">87</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 82: fmod(0x0000001000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">88</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 83: fmod(0x0000000555555555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">88</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 83: fmod(0x0000000555555555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">89</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 84: fmod(0x0000000AAAAAAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">89</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 84: fmod(0x0000000AAAAAAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">90</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 85: fmod(0x000FFFF000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">90</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 85: fmod(0x000FFFF000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">91</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 86: fmod(0x0005555000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">91</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 86: fmod(0x0005555000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">92</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 87: fmod(0x000AAAA000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">92</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 87: fmod(0x000AAAA000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">93</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 88: fmod(0x000FFFEFFFFFFFFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">93</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 88: fmod(0x000FFFEFFFFFFFFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">94</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 89: fmod(0x0005554555555555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">94</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 89: fmod(0x0005554555555555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">95</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 90: fmod(0x000AAAAAAAAAAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">95</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 90: fmod(0x000AAAAAAAAAAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">96</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 91: fmod(0x00001FFFFFFFFFFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">96</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 91: fmod(0x00001FFFFFFFFFFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">97</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 92: fmod(0x0000200000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">97</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 92: fmod(0x0000200000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">98</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 93: fmod(0x0000155555555555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">98</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 93: fmod(0x0000155555555555, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">99</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 94: fmod(0x00000AAAAAAAAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">99</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 94: fmod(0x00000AAAAAAAAAAA, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">100</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 95: fmod(0x000FE00000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">100</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 95: fmod(0x000FE00000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">101</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 96: fmod(0x0005400000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">101</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 96: fmod(0x0005400000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">102</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 97: fmod(0x000AA00000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">102</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 97: fmod(0x000AA00000000000, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">103</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 98: fmod(0x000FDFFFFFFFFFFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">103</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 98: fmod(0x000FDFFFFFFFFFFF, 0x0000000000000000) -&gt; 0x7FF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">532709</td>
+<td class="TextItemSame Wrap">532704: fmod(0xFFFFFFFFFFFFFFFE, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">532709</td>
+<td class="TextItemSame Wrap">532704: fmod(0xFFFFFFFFFFFFFFFE, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532710</td>
+<td class="TextItemSame Wrap">532705: fmod(0xFFF5555555555554, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532710</td>
+<td class="TextItemSame Wrap">532705: fmod(0xFFF5555555555554, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532711</td>
+<td class="TextItemSame Wrap">532706: fmod(0xFFFAAAAAAAAAAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532711</td>
+<td class="TextItemSame Wrap">532706: fmod(0xFFFAAAAAAAAAAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532712</td>
+<td class="TextItemSame Wrap">532707: fmod(0xFFFFFFFFFFFFFFFD, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532712</td>
+<td class="TextItemSame Wrap">532707: fmod(0xFFFFFFFFFFFFFFFD, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532713</td>
+<td class="TextItemSame Wrap">532708: fmod(0xFFF5555555555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532713</td>
+<td class="TextItemSame Wrap">532708: fmod(0xFFF5555555555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532714</td>
+<td class="TextItemSame Wrap">532709: fmod(0xFFFAAAAAAAAAAAA8, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532714</td>
+<td class="TextItemSame Wrap">532709: fmod(0xFFFAAAAAAAAAAAA8, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532715</td>
+<td class="TextItemSame Wrap">532710: fmod(0xFFF0000000000007, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532715</td>
+<td class="TextItemSame Wrap">532710: fmod(0xFFF0000000000007, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532716</td>
+<td class="TextItemSame Wrap">532711: fmod(0xFFF0000000000008, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532716</td>
+<td class="TextItemSame Wrap">532711: fmod(0xFFF0000000000008, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532717</td>
+<td class="TextItemSame Wrap">532712: fmod(0xFFF0000000000005, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532717</td>
+<td class="TextItemSame Wrap">532712: fmod(0xFFF0000000000005, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532718</td>
+<td class="TextItemSame Wrap">532713: fmod(0xFFF0000000000002, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532718</td>
+<td class="TextItemSame Wrap">532713: fmod(0xFFF0000000000002, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532719</td>
+<td class="TextItemSame Wrap">532714: fmod(0xFFFFFFFFFFFFFFF8, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532719</td>
+<td class="TextItemSame Wrap">532714: fmod(0xFFFFFFFFFFFFFFF8, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532720</td>
+<td class="TextItemSame Wrap">532715: fmod(0xFFF5555555555550, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532720</td>
+<td class="TextItemSame Wrap">532715: fmod(0xFFF5555555555550, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532721</td>
+<td class="TextItemSame Wrap">532716: fmod(0xFFFAAAAAAAAAAAA8, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532721</td>
+<td class="TextItemSame Wrap">532716: fmod(0xFFFAAAAAAAAAAAA8, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532722</td>
+<td class="TextItemSame Wrap">532717: fmod(0xFFFFFFFFFFFFFFF7, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532722</td>
+<td class="TextItemSame Wrap">532717: fmod(0xFFFFFFFFFFFFFFF7, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532723</td>
+<td class="TextItemSame Wrap">532718: fmod(0xFFF5555555555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532723</td>
+<td class="TextItemSame Wrap">532718: fmod(0xFFF5555555555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532724</td>
+<td class="TextItemSame Wrap">532719: fmod(0xFFFAAAAAAAAAAAA2, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532724</td>
+<td class="TextItemSame Wrap">532719: fmod(0xFFFAAAAAAAAAAAA2, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532725</td>
+<td class="TextItemSame Wrap">532720: fmod(0xFFF000000000003F, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532725</td>
+<td class="TextItemSame Wrap">532720: fmod(0xFFF000000000003F, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532726</td>
+<td class="TextItemSame Wrap">532721: fmod(0xFFF0000000000040, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532726</td>
+<td class="TextItemSame Wrap">532721: fmod(0xFFF0000000000040, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532727</td>
+<td class="TextItemSame Wrap">532722: fmod(0xFFF0000000000015, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532727</td>
+<td class="TextItemSame Wrap">532722: fmod(0xFFF0000000000015, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532728</td>
+<td class="TextItemSame Wrap">532723: fmod(0xFFF000000000002A, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532728</td>
+<td class="TextItemSame Wrap">532723: fmod(0xFFF000000000002A, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532729</td>
+<td class="TextItemSame Wrap">532724: fmod(0xFFFFFFFFFFFFFFC0, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532729</td>
+<td class="TextItemSame Wrap">532724: fmod(0xFFFFFFFFFFFFFFC0, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532730</td>
+<td class="TextItemSame Wrap">532725: fmod(0xFFF5555555555540, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532730</td>
+<td class="TextItemSame Wrap">532725: fmod(0xFFF5555555555540, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532731</td>
+<td class="TextItemSame Wrap">532726: fmod(0xFFFAAAAAAAAAAA80, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532731</td>
+<td class="TextItemSame Wrap">532726: fmod(0xFFFAAAAAAAAAAA80, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532732</td>
+<td class="TextItemSame Wrap">532727: fmod(0xFFFFFFFFFFFFFFBF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532732</td>
+<td class="TextItemSame Wrap">532727: fmod(0xFFFFFFFFFFFFFFBF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532733</td>
+<td class="TextItemSame Wrap">532728: fmod(0xFFF5555555555515, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532733</td>
+<td class="TextItemSame Wrap">532728: fmod(0xFFF5555555555515, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532734</td>
+<td class="TextItemSame Wrap">532729: fmod(0xFFFAAAAAAAAAAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532734</td>
+<td class="TextItemSame Wrap">532729: fmod(0xFFFAAAAAAAAAAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532735</td>
+<td class="TextItemSame Wrap">532730: fmod(0xFFF00000000003FF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532735</td>
+<td class="TextItemSame Wrap">532730: fmod(0xFFF00000000003FF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532736</td>
+<td class="TextItemSame Wrap">532731: fmod(0xFFF0000000000400, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532736</td>
+<td class="TextItemSame Wrap">532731: fmod(0xFFF0000000000400, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532737</td>
+<td class="TextItemSame Wrap">532732: fmod(0xFFF0000000000155, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532737</td>
+<td class="TextItemSame Wrap">532732: fmod(0xFFF0000000000155, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532738</td>
+<td class="TextItemSame Wrap">532733: fmod(0xFFF00000000002AA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532738</td>
+<td class="TextItemSame Wrap">532733: fmod(0xFFF00000000002AA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532739</td>
+<td class="TextItemSame Wrap">532734: fmod(0xFFFFFFFFFFFFFC00, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532739</td>
+<td class="TextItemSame Wrap">532734: fmod(0xFFFFFFFFFFFFFC00, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532740</td>
+<td class="TextItemSame Wrap">532735: fmod(0xFFF5555555555400, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532740</td>
+<td class="TextItemSame Wrap">532735: fmod(0xFFF5555555555400, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532741</td>
+<td class="TextItemSame Wrap">532736: fmod(0xFFFAAAAAAAAAA800, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532741</td>
+<td class="TextItemSame Wrap">532736: fmod(0xFFFAAAAAAAAAA800, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532742</td>
+<td class="TextItemSame Wrap">532737: fmod(0xFFFFFFFFFFFFFBFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532742</td>
+<td class="TextItemSame Wrap">532737: fmod(0xFFFFFFFFFFFFFBFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532743</td>
+<td class="TextItemSame Wrap">532738: fmod(0xFFF5555555555155, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532743</td>
+<td class="TextItemSame Wrap">532738: fmod(0xFFF5555555555155, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532744</td>
+<td class="TextItemSame Wrap">532739: fmod(0xFFFAAAAAAAAAAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532744</td>
+<td class="TextItemSame Wrap">532739: fmod(0xFFFAAAAAAAAAAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532745</td>
+<td class="TextItemSame Wrap">532740: fmod(0xFFF0000000007FFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532745</td>
+<td class="TextItemSame Wrap">532740: fmod(0xFFF0000000007FFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532746</td>
+<td class="TextItemSame Wrap">532741: fmod(0xFFF0000000008000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532746</td>
+<td class="TextItemSame Wrap">532741: fmod(0xFFF0000000008000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532747</td>
+<td class="TextItemSame Wrap">532742: fmod(0xFFF0000000005555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532747</td>
+<td class="TextItemSame Wrap">532742: fmod(0xFFF0000000005555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532748</td>
+<td class="TextItemSame Wrap">532743: fmod(0xFFF0000000002AAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532748</td>
+<td class="TextItemSame Wrap">532743: fmod(0xFFF0000000002AAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532749</td>
+<td class="TextItemSame Wrap">532744: fmod(0xFFFFFFFFFFFF8000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532749</td>
+<td class="TextItemSame Wrap">532744: fmod(0xFFFFFFFFFFFF8000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532750</td>
+<td class="TextItemSame Wrap">532745: fmod(0xFFF5555555550000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532750</td>
+<td class="TextItemSame Wrap">532745: fmod(0xFFF5555555550000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532751</td>
+<td class="TextItemSame Wrap">532746: fmod(0xFFFAAAAAAAAA8000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532751</td>
+<td class="TextItemSame Wrap">532746: fmod(0xFFFAAAAAAAAA8000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532752</td>
+<td class="TextItemSame Wrap">532747: fmod(0xFFFFFFFFFFFF7FFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532752</td>
+<td class="TextItemSame Wrap">532747: fmod(0xFFFFFFFFFFFF7FFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532753</td>
+<td class="TextItemSame Wrap">532748: fmod(0xFFF5555555555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532753</td>
+<td class="TextItemSame Wrap">532748: fmod(0xFFF5555555555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532754</td>
+<td class="TextItemSame Wrap">532749: fmod(0xFFFAAAAAAAAA2AAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532754</td>
+<td class="TextItemSame Wrap">532749: fmod(0xFFFAAAAAAAAA2AAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532755</td>
+<td class="TextItemSame Wrap">532750: fmod(0xFFF00000001FFFFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532755</td>
+<td class="TextItemSame Wrap">532750: fmod(0xFFF00000001FFFFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532756</td>
+<td class="TextItemSame Wrap">532751: fmod(0xFFF0000000200000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532756</td>
+<td class="TextItemSame Wrap">532751: fmod(0xFFF0000000200000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532757</td>
+<td class="TextItemSame Wrap">532752: fmod(0xFFF0000000155555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532757</td>
+<td class="TextItemSame Wrap">532752: fmod(0xFFF0000000155555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532758</td>
+<td class="TextItemSame Wrap">532753: fmod(0xFFF00000000AAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532758</td>
+<td class="TextItemSame Wrap">532753: fmod(0xFFF00000000AAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532759</td>
+<td class="TextItemSame Wrap">532754: fmod(0xFFFFFFFFFFE00000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532759</td>
+<td class="TextItemSame Wrap">532754: fmod(0xFFFFFFFFFFE00000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532760</td>
+<td class="TextItemSame Wrap">532755: fmod(0xFFF5555555400000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532760</td>
+<td class="TextItemSame Wrap">532755: fmod(0xFFF5555555400000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532761</td>
+<td class="TextItemSame Wrap">532756: fmod(0xFFFAAAAAAAA00000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532761</td>
+<td class="TextItemSame Wrap">532756: fmod(0xFFFAAAAAAAA00000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532762</td>
+<td class="TextItemSame Wrap">532757: fmod(0xFFFFFFFFFFDFFFFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532762</td>
+<td class="TextItemSame Wrap">532757: fmod(0xFFFFFFFFFFDFFFFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532763</td>
+<td class="TextItemSame Wrap">532758: fmod(0xFFF5555555555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532763</td>
+<td class="TextItemSame Wrap">532758: fmod(0xFFF5555555555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532764</td>
+<td class="TextItemSame Wrap">532759: fmod(0xFFFAAAAAAA8AAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532764</td>
+<td class="TextItemSame Wrap">532759: fmod(0xFFFAAAAAAA8AAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532765</td>
+<td class="TextItemSame Wrap">532760: fmod(0xFFF000000FFFFFFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532765</td>
+<td class="TextItemSame Wrap">532760: fmod(0xFFF000000FFFFFFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532766</td>
+<td class="TextItemSame Wrap">532761: fmod(0xFFF0000010000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532766</td>
+<td class="TextItemSame Wrap">532761: fmod(0xFFF0000010000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532767</td>
+<td class="TextItemSame Wrap">532762: fmod(0xFFF0000005555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532767</td>
+<td class="TextItemSame Wrap">532762: fmod(0xFFF0000005555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532768</td>
+<td class="TextItemSame Wrap">532763: fmod(0xFFF000000AAAAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532768</td>
+<td class="TextItemSame Wrap">532763: fmod(0xFFF000000AAAAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532769</td>
+<td class="TextItemSame Wrap">532764: fmod(0xFFFFFFFFF0000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532769</td>
+<td class="TextItemSame Wrap">532764: fmod(0xFFFFFFFFF0000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532770</td>
+<td class="TextItemSame Wrap">532765: fmod(0xFFF5555550000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532770</td>
+<td class="TextItemSame Wrap">532765: fmod(0xFFF5555550000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532771</td>
+<td class="TextItemSame Wrap">532766: fmod(0xFFFAAAAAA0000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532771</td>
+<td class="TextItemSame Wrap">532766: fmod(0xFFFAAAAAA0000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532772</td>
+<td class="TextItemSame Wrap">532767: fmod(0xFFFFFFFFEFFFFFFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532772</td>
+<td class="TextItemSame Wrap">532767: fmod(0xFFFFFFFFEFFFFFFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532773</td>
+<td class="TextItemSame Wrap">532768: fmod(0xFFF5555545555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532773</td>
+<td class="TextItemSame Wrap">532768: fmod(0xFFF5555545555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532774</td>
+<td class="TextItemSame Wrap">532769: fmod(0xFFFAAAAAAAAAAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532774</td>
+<td class="TextItemSame Wrap">532769: fmod(0xFFFAAAAAAAAAAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532775</td>
+<td class="TextItemSame Wrap">532770: fmod(0xFFF0000FFFFFFFFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532775</td>
+<td class="TextItemSame Wrap">532770: fmod(0xFFF0000FFFFFFFFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532776</td>
+<td class="TextItemSame Wrap">532771: fmod(0xFFF0001000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532776</td>
+<td class="TextItemSame Wrap">532771: fmod(0xFFF0001000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532777</td>
+<td class="TextItemSame Wrap">532772: fmod(0xFFF0000555555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532777</td>
+<td class="TextItemSame Wrap">532772: fmod(0xFFF0000555555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532778</td>
+<td class="TextItemSame Wrap">532773: fmod(0xFFF0000AAAAAAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532778</td>
+<td class="TextItemSame Wrap">532773: fmod(0xFFF0000AAAAAAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532779</td>
+<td class="TextItemSame Wrap">532774: fmod(0xFFFFFFF000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532779</td>
+<td class="TextItemSame Wrap">532774: fmod(0xFFFFFFF000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532780</td>
+<td class="TextItemSame Wrap">532775: fmod(0xFFF5555000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532780</td>
+<td class="TextItemSame Wrap">532775: fmod(0xFFF5555000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532781</td>
+<td class="TextItemSame Wrap">532776: fmod(0xFFFAAAA000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532781</td>
+<td class="TextItemSame Wrap">532776: fmod(0xFFFAAAA000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532782</td>
+<td class="TextItemSame Wrap">532777: fmod(0xFFFFFFEFFFFFFFFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532782</td>
+<td class="TextItemSame Wrap">532777: fmod(0xFFFFFFEFFFFFFFFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532783</td>
+<td class="TextItemSame Wrap">532778: fmod(0xFFF5554555555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532783</td>
+<td class="TextItemSame Wrap">532778: fmod(0xFFF5554555555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532784</td>
+<td class="TextItemSame Wrap">532779: fmod(0xFFFAAAAAAAAAAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532784</td>
+<td class="TextItemSame Wrap">532779: fmod(0xFFFAAAAAAAAAAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532785</td>
+<td class="TextItemSame Wrap">532780: fmod(0xFFF01FFFFFFFFFFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532785</td>
+<td class="TextItemSame Wrap">532780: fmod(0xFFF01FFFFFFFFFFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532786</td>
+<td class="TextItemSame Wrap">532781: fmod(0xFFF0200000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532786</td>
+<td class="TextItemSame Wrap">532781: fmod(0xFFF0200000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532787</td>
+<td class="TextItemSame Wrap">532782: fmod(0xFFF0155555555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532787</td>
+<td class="TextItemSame Wrap">532782: fmod(0xFFF0155555555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532788</td>
+<td class="TextItemSame Wrap">532783: fmod(0xFFF00AAAAAAAAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532788</td>
+<td class="TextItemSame Wrap">532783: fmod(0xFFF00AAAAAAAAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532789</td>
+<td class="TextItemSame Wrap">532784: fmod(0xFFFFE00000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532789</td>
+<td class="TextItemSame Wrap">532784: fmod(0xFFFFE00000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532790</td>
+<td class="TextItemSame Wrap">532785: fmod(0xFFF5400000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532790</td>
+<td class="TextItemSame Wrap">532785: fmod(0xFFF5400000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532791</td>
+<td class="TextItemSame Wrap">532786: fmod(0xFFFAA00000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532791</td>
+<td class="TextItemSame Wrap">532786: fmod(0xFFFAA00000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532792</td>
+<td class="TextItemSame Wrap">532787: fmod(0xFFFFDFFFFFFFFFFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532792</td>
+<td class="TextItemSame Wrap">532787: fmod(0xFFFFDFFFFFFFFFFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532793</td>
+<td class="TextItemSame Wrap">532788: fmod(0xFFF5555555555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532793</td>
+<td class="TextItemSame Wrap">532788: fmod(0xFFF5555555555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532794</td>
+<td class="TextItemSame Wrap">532789: fmod(0xFFFA8AAAAAAAAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532794</td>
+<td class="TextItemSame Wrap">532789: fmod(0xFFFA8AAAAAAAAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532795</td>
+<td class="TextItemSame Wrap">532790: fmod(0xFFF7FFFFFFFFFFFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532795</td>
+<td class="TextItemSame Wrap">532790: fmod(0xFFF7FFFFFFFFFFFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532796</td>
+<td class="TextItemSame Wrap">532791: fmod(0xFFF8000000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532796</td>
+<td class="TextItemSame Wrap">532791: fmod(0xFFF8000000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532797</td>
+<td class="TextItemSame Wrap">532792: fmod(0xFFF5555555555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532797</td>
+<td class="TextItemSame Wrap">532792: fmod(0xFFF5555555555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532798</td>
+<td class="TextItemSame Wrap">532793: fmod(0xFFF2AAAAAAAAAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532798</td>
+<td class="TextItemSame Wrap">532793: fmod(0xFFF2AAAAAAAAAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532799</td>
+<td class="TextItemSame Wrap">532794: fmod(0xFFF8000000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532799</td>
+<td class="TextItemSame Wrap">532794: fmod(0xFFF8000000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532800</td>
+<td class="TextItemSame Wrap">532795: fmod(0xFFF0000000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532800</td>
+<td class="TextItemSame Wrap">532795: fmod(0xFFF0000000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532801</td>
+<td class="TextItemSame Wrap">532796: fmod(0xFFF8000000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532801</td>
+<td class="TextItemSame Wrap">532796: fmod(0xFFF8000000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532802</td>
+<td class="TextItemSame Wrap">532797: fmod(0xFFF7FFFFFFFFFFFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532802</td>
+<td class="TextItemSame Wrap">532797: fmod(0xFFF7FFFFFFFFFFFF, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532803</td>
+<td class="TextItemSame Wrap">532798: fmod(0xFFF5555555555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532803</td>
+<td class="TextItemSame Wrap">532798: fmod(0xFFF5555555555555, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532804</td>
+<td class="TextItemSame Wrap">532799: fmod(0xFFF2AAAAAAAAAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532804</td>
+<td class="TextItemSame Wrap">532799: fmod(0xFFF2AAAAAAAAAAAA, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532805</td>
+<td class="TextItemSame Wrap">532800: fmod(0xFFF8000000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532805</td>
+<td class="TextItemSame Wrap">532800: fmod(0xFFF8000000000000, 0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">532806</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532806</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">532807</td>
+<td class="TextItemSame Wrap">############################################################</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532807</td>
+<td class="TextItemSame Wrap">############################################################</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">532808</td>
+<td class="TextItemSigMod Wrap">current date and time: 2025-08-30 15:<span class="TextSegSigDiff">19:29</span></td>
+<td class="AlignCenter Wrap">&lt;&gt;</td>
+<td class="TextItemNum AlignRight Wrap">532808</td>
+<td class="TextItemSigMod Wrap">current date and time: 2025-08-30 15:<span class="TextSegSigDiff">20:35</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">532809</td>
+<td class="TextItemSame Wrap">overall measured samples: 532800</td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">532809</td>
+<td class="TextItemSame Wrap">overall measured samples: 532800</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">532810</td>
+<td class="TextItemSame Wrap">logged samples: 532800</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">532810</td>
+<td class="TextItemSame Wrap">logged samples: 532800</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">532811</td>
+<td class="TextItemSigMod Wrap">processing time: 00:00:0<span class="TextSegSigDiff">6</span></td>
+<td class="AlignCenter Wrap">&lt;&gt;</td>
+<td class="TextItemNum AlignRight Wrap">532811</td>
+<td class="TextItemSigMod Wrap">processing time: 00:00:0<span class="TextSegSigDiff">1</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">532812</td>
+<td class="TextItemSame Wrap">############################################################</td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">532812</td>
+<td class="TextItemSame Wrap">############################################################</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

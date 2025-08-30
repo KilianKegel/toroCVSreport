@@ -1,0 +1,325 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+.AlignLeft { text-align: left; }
+.AlignCenter { text-align: center; }
+.AlignRight { text-align: right; }
+.Wrap { white-space: nowrap; }
+body { font-family: sans-serif; font-size: 11pt; }
+img.AutoScale { max-width: 100%; max-height: 100%; }
+td { vertical-align: top; padding-left: 4px; padding-right: 4px; }
+
+tr.SectionGap td { font-size: 4px; border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionBegin td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionMiddle td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SubsectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.SubsectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+table.fc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: monospace; font-size: 10pt; }
+td.TextItemInsigMod { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigOrphan { color: #000000; background-color: #FAEEFF; }
+td.TextItemNum { color: #696969; background-color: #F0F0F0; }
+td.TextItemSame { color: #000000; background-color: #FFFFFF; }
+td.TextItemSigMod { color: #000000; background-color: #FFE8E8; }
+td.TextItemSigOrphan { color: #000000; background-color: #F1E3FF; }
+.TextSegInsigDiff { color: #0000FF; }
+.TextSegReplacedDiff { color: #0000FF; font-style: italic; }
+.TextSegSigDiff { color: #FF0000; }
+td.TextItemInsigAdd { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigDel { color: #000000; background-color: #EEEEFF; text-decoration: line-through; }
+td.TextItemSigAdd { color: #000000; background-color: #FFE8E8; }
+td.TextItemSigDel { color: #000000; background-color: #FFE8E8; text-decoration: line-through; }
+</style>
+<title>sqrt(): toro C Library vs. Microsoft C Library</title>
+</head>
+<body>
+sqrt(): toro C Library vs. Microsoft C Library<br>
+Produced: 8/30/2025 3:58:12 PM<br>
+&nbsp; &nbsp;
+<br>
+Mode:&nbsp; Differences, With Context &nbsp;
+<br>
+Left file: R:\toroCVS\x64\toroWindows\sqrt.-.log&nbsp; &nbsp;&nbsp; Right file: R:\toroCVS\x64\msftWindows\sqrt.-.log &nbsp;
+<br>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">1</td>
+<td class="TextItemSame Wrap">############################################################################</td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">1</td>
+<td class="TextItemSame Wrap">############################################################################</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">2</td>
+<td class="TextItemSame Wrap">### toroCVS: sqrt() ######################################################</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">2</td>
+<td class="TextItemSame Wrap">### toroCVS: sqrt() ######################################################</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">3</td>
+<td class="TextItemSame Wrap">############################################################################</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">3</td>
+<td class="TextItemSame Wrap">############################################################################</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">4</td>
+<td class="TextItemSigMod Wrap">COMMANDLINE: R:\toroCVS\x64\t<span class="TextSegSigDiff">oro</span>Windows\sqrt /log /logfull&nbsp;</td>
+<td class="AlignCenter Wrap">&lt;&gt;</td>
+<td class="TextItemNum AlignRight Wrap">4</td>
+<td class="TextItemSigMod Wrap">COMMANDLINE: R:\toroCVS\x64\<span class="TextSegSigDiff">msf</span>tWindows\sqrt /log /logfull&nbsp;</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">5</td>
+<td class="TextItemSame Wrap">### __abort_behavior: 2</td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">5</td>
+<td class="TextItemSame Wrap">### __abort_behavior: 2</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">6</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 1: sqrt(0x0000000000000000) -&gt; 0x0000000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">6</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 1: sqrt(0x0000000000000000) -&gt; 0x0000000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">7</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 2: sqrt(0x0000000000000001) -&gt; 0x1E60000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">7</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 2: sqrt(0x0000000000000001) -&gt; 0x1E60000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">8</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 3: sqrt(0x0000000000000000) -&gt; 0x0000000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">8</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 3: sqrt(0x0000000000000000) -&gt; 0x0000000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">9</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 4: sqrt(0x0000000000000000) -&gt; 0x0000000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">9</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 4: sqrt(0x0000000000000000) -&gt; 0x0000000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">10</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 5: sqrt(0x000FFFFFFFFFFFFF) -&gt; 0x1FFFFFFFFFFFFFFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">10</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 5: sqrt(0x000FFFFFFFFFFFFF) -&gt; 0x1FFFFFFFFFFFFFFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">11</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 6: sqrt(0x0005555555555555) -&gt; 0x1FF279A74590331C errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">11</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 6: sqrt(0x0005555555555555) -&gt; 0x1FF279A74590331C errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">12</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 7: sqrt(0x000AAAAAAAAAAAAA) -&gt; 0x1FFA20BD700C2C3D errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">12</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 7: sqrt(0x000AAAAAAAAAAAAA) -&gt; 0x1FFA20BD700C2C3D errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">13</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 8: sqrt(0x000FFFFFFFFFFFFE) -&gt; 0x1FFFFFFFFFFFFFFE errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">13</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 8: sqrt(0x000FFFFFFFFFFFFE) -&gt; 0x1FFFFFFFFFFFFFFE errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">14</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 9: sqrt(0x0005555555555554) -&gt; 0x1FF279A74590331A errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">14</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 9: sqrt(0x0005555555555554) -&gt; 0x1FF279A74590331A errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">15</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 10: sqrt(0x000AAAAAAAAAAAAA) -&gt; 0x1FFA20BD700C2C3D errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">15</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 10: sqrt(0x000AAAAAAAAAAAAA) -&gt; 0x1FFA20BD700C2C3D errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">16</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 11: sqrt(0x0000000000000001) -&gt; 0x1E60000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">16</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 11: sqrt(0x0000000000000001) -&gt; 0x1E60000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">17</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 12: sqrt(0x0000000000000002) -&gt; 0x1E66A09E667F3BCD errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">17</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 12: sqrt(0x0000000000000002) -&gt; 0x1E66A09E667F3BCD errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">18</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 13: sqrt(0x0000000000000001) -&gt; 0x1E60000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">18</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 13: sqrt(0x0000000000000001) -&gt; 0x1E60000000000000 errno 0</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">19</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 14: sqrt(0x0000000000000000) -&gt; 0x0000000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">19</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 14: sqrt(0x0000000000000000) -&gt; 0x0000000000000000 errno 0</td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">454649</td>
+<td class="TextItemSame Wrap">454644: sqrt(0xFFF5555555555555) -&gt; 0xFFFD555555555555 errno 0</td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">454649</td>
+<td class="TextItemSame Wrap">454644: sqrt(0xFFF5555555555555) -&gt; 0xFFFD555555555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454650</td>
+<td class="TextItemSame Wrap">454645: sqrt(0xFFFA8AAAAAAAAAAA) -&gt; 0xFFFA8AAAAAAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454650</td>
+<td class="TextItemSame Wrap">454645: sqrt(0xFFFA8AAAAAAAAAAA) -&gt; 0xFFFA8AAAAAAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454651</td>
+<td class="TextItemSame Wrap">454646: sqrt(0xFFF7FFFFFFFFFFFF) -&gt; 0xFFFFFFFFFFFFFFFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454651</td>
+<td class="TextItemSame Wrap">454646: sqrt(0xFFF7FFFFFFFFFFFF) -&gt; 0xFFFFFFFFFFFFFFFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454652</td>
+<td class="TextItemSame Wrap">454647: sqrt(0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454652</td>
+<td class="TextItemSame Wrap">454647: sqrt(0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454653</td>
+<td class="TextItemSame Wrap">454648: sqrt(0xFFF5555555555555) -&gt; 0xFFFD555555555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454653</td>
+<td class="TextItemSame Wrap">454648: sqrt(0xFFF5555555555555) -&gt; 0xFFFD555555555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454654</td>
+<td class="TextItemSame Wrap">454649: sqrt(0xFFF2AAAAAAAAAAAA) -&gt; 0xFFFAAAAAAAAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454654</td>
+<td class="TextItemSame Wrap">454649: sqrt(0xFFF2AAAAAAAAAAAA) -&gt; 0xFFFAAAAAAAAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454655</td>
+<td class="TextItemSame Wrap">454650: sqrt(0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454655</td>
+<td class="TextItemSame Wrap">454650: sqrt(0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454656</td>
+<td class="TextItemSame Wrap">454651: sqrt(0xFFF0000000000000) -&gt; 0xFFF8000000000000 errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454656</td>
+<td class="TextItemSame Wrap">454651: sqrt(0xFFF0000000000000) -&gt; 0xFFF8000000000000 errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454657</td>
+<td class="TextItemSame Wrap">454652: sqrt(0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454657</td>
+<td class="TextItemSame Wrap">454652: sqrt(0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454658</td>
+<td class="TextItemSame Wrap">454653: sqrt(0xFFF7FFFFFFFFFFFF) -&gt; 0xFFFFFFFFFFFFFFFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454658</td>
+<td class="TextItemSame Wrap">454653: sqrt(0xFFF7FFFFFFFFFFFF) -&gt; 0xFFFFFFFFFFFFFFFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454659</td>
+<td class="TextItemSame Wrap">454654: sqrt(0xFFF5555555555555) -&gt; 0xFFFD555555555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454659</td>
+<td class="TextItemSame Wrap">454654: sqrt(0xFFF5555555555555) -&gt; 0xFFFD555555555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454660</td>
+<td class="TextItemSame Wrap">454655: sqrt(0xFFF2AAAAAAAAAAAA) -&gt; 0xFFFAAAAAAAAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454660</td>
+<td class="TextItemSame Wrap">454655: sqrt(0xFFF2AAAAAAAAAAAA) -&gt; 0xFFFAAAAAAAAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454661</td>
+<td class="TextItemSame Wrap">454656: sqrt(0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454661</td>
+<td class="TextItemSame Wrap">454656: sqrt(0xFFF8000000000000) -&gt; 0xFFF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454662</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454662</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">454663</td>
+<td class="TextItemSame Wrap">############################################################</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454663</td>
+<td class="TextItemSame Wrap">############################################################</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">454664</td>
+<td class="TextItemSigMod Wrap">current date and time: 2025-08-30 15:<span class="TextSegSigDiff">18:</span><span class="TextSegSigDiff">54</span></td>
+<td class="AlignCenter Wrap">&lt;&gt;</td>
+<td class="TextItemNum AlignRight Wrap">454664</td>
+<td class="TextItemSigMod Wrap">current date and time: 2025-08-30 15:<span class="TextSegSigDiff">20:25</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">454665</td>
+<td class="TextItemSame Wrap">overall measured samples: 454656</td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">454665</td>
+<td class="TextItemSame Wrap">overall measured samples: 454656</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">454666</td>
+<td class="TextItemSame Wrap">logged samples: 454656</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454666</td>
+<td class="TextItemSame Wrap">logged samples: 454656</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">454667</td>
+<td class="TextItemSigMod Wrap">processing time: 00:00:0<span class="TextSegSigDiff">5</span></td>
+<td class="AlignCenter Wrap">&lt;&gt;</td>
+<td class="TextItemNum AlignRight Wrap">454667</td>
+<td class="TextItemSigMod Wrap">processing time: 00:00:0<span class="TextSegSigDiff">0</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">454668</td>
+<td class="TextItemSame Wrap">############################################################</td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">454668</td>
+<td class="TextItemSame Wrap">############################################################</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

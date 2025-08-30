@@ -1,0 +1,1501 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+.AlignLeft { text-align: left; }
+.AlignCenter { text-align: center; }
+.AlignRight { text-align: right; }
+.Wrap { white-space: nowrap; }
+body { font-family: sans-serif; font-size: 11pt; }
+img.AutoScale { max-width: 100%; max-height: 100%; }
+td { vertical-align: top; padding-left: 4px; padding-right: 4px; }
+
+tr.SectionGap td { font-size: 4px; border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionBegin td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionMiddle td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SubsectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.SubsectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+table.fc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: monospace; font-size: 10pt; }
+td.TextItemInsigMod { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigOrphan { color: #000000; background-color: #FAEEFF; }
+td.TextItemNum { color: #696969; background-color: #F0F0F0; }
+td.TextItemSame { color: #000000; background-color: #FFFFFF; }
+td.TextItemSigMod { color: #000000; background-color: #FFE8E8; }
+td.TextItemSigOrphan { color: #000000; background-color: #F1E3FF; }
+.TextSegInsigDiff { color: #0000FF; }
+.TextSegReplacedDiff { color: #0000FF; font-style: italic; }
+.TextSegSigDiff { color: #FF0000; }
+td.TextItemInsigAdd { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigDel { color: #000000; background-color: #EEEEFF; text-decoration: line-through; }
+td.TextItemSigAdd { color: #000000; background-color: #FFE8E8; }
+td.TextItemSigDel { color: #000000; background-color: #FFE8E8; text-decoration: line-through; }
+</style>
+<title>fabs(): toro C Library vs. Microsoft C Library</title>
+</head>
+<body>
+fabs(): toro C Library vs. Microsoft C Library<br>
+Produced: 8/30/2025 3:35:38 PM<br>
+&nbsp; &nbsp;
+<br>
+Mode:&nbsp; Differences, With Context &nbsp;
+<br>
+Left file: R:\toroCVS\x64\toroWindows\fabs.-.log&nbsp; &nbsp;&nbsp; Right file: R:\toroCVS\x64\msftWindows\fabs.-.log &nbsp;
+<br>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">1</td>
+<td class="TextItemSame Wrap">############################################################################</td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">1</td>
+<td class="TextItemSame Wrap">############################################################################</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">2</td>
+<td class="TextItemSame Wrap">### toroCVS: fabs() ######################################################</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">2</td>
+<td class="TextItemSame Wrap">### toroCVS: fabs() ######################################################</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">3</td>
+<td class="TextItemSame Wrap">############################################################################</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">3</td>
+<td class="TextItemSame Wrap">############################################################################</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">4</td>
+<td class="TextItemSigMod Wrap">COMMANDLINE: R:\toroCVS\x64\t<span class="TextSegSigDiff">oro</span>Windows\fabs /log /logfull&nbsp;</td>
+<td class="AlignCenter Wrap">&lt;&gt;</td>
+<td class="TextItemNum AlignRight Wrap">4</td>
+<td class="TextItemSigMod Wrap">COMMANDLINE: R:\toroCVS\x64\<span class="TextSegSigDiff">msf</span>tWindows\fabs /log /logfull&nbsp;</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">5</td>
+<td class="TextItemSame Wrap">### __abort_behavior: 2</td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">5</td>
+<td class="TextItemSame Wrap">### __abort_behavior: 2</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">6</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 1: fabs(0x0000000000000000) -&gt; 0x0000000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">6</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 1: fabs(0x0000000000000000) -&gt; 0x0000000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">7</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 2: fabs(0x0000000000000001) -&gt; 0x0000000000000001 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">7</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 2: fabs(0x0000000000000001) -&gt; 0x0000000000000001 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">8</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 3: fabs(0x0000000000000000) -&gt; 0x0000000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">8</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 3: fabs(0x0000000000000000) -&gt; 0x0000000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">9</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 4: fabs(0x0000000000000000) -&gt; 0x0000000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">9</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 4: fabs(0x0000000000000000) -&gt; 0x0000000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">10</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 5: fabs(0x000FFFFFFFFFFFFF) -&gt; 0x000FFFFFFFFFFFFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">10</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 5: fabs(0x000FFFFFFFFFFFFF) -&gt; 0x000FFFFFFFFFFFFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">11</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 6: fabs(0x0005555555555555) -&gt; 0x0005555555555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">11</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 6: fabs(0x0005555555555555) -&gt; 0x0005555555555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">12</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 7: fabs(0x000AAAAAAAAAAAAA) -&gt; 0x000AAAAAAAAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">12</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 7: fabs(0x000AAAAAAAAAAAAA) -&gt; 0x000AAAAAAAAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">13</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 8: fabs(0x000FFFFFFFFFFFFE) -&gt; 0x000FFFFFFFFFFFFE errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">13</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 8: fabs(0x000FFFFFFFFFFFFE) -&gt; 0x000FFFFFFFFFFFFE errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">14</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 9: fabs(0x0005555555555554) -&gt; 0x0005555555555554 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">14</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 9: fabs(0x0005555555555554) -&gt; 0x0005555555555554 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">15</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 10: fabs(0x000AAAAAAAAAAAAA) -&gt; 0x000AAAAAAAAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">15</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 10: fabs(0x000AAAAAAAAAAAAA) -&gt; 0x000AAAAAAAAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">16</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 11: fabs(0x0000000000000001) -&gt; 0x0000000000000001 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">16</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 11: fabs(0x0000000000000001) -&gt; 0x0000000000000001 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">17</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 12: fabs(0x0000000000000002) -&gt; 0x0000000000000002 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">17</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 12: fabs(0x0000000000000002) -&gt; 0x0000000000000002 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">18</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 13: fabs(0x0000000000000001) -&gt; 0x0000000000000001 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">18</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 13: fabs(0x0000000000000001) -&gt; 0x0000000000000001 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">19</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 14: fabs(0x0000000000000000) -&gt; 0x0000000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">19</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 14: fabs(0x0000000000000000) -&gt; 0x0000000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">20</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 15: fabs(0x000FFFFFFFFFFFFE) -&gt; 0x000FFFFFFFFFFFFE errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">20</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 15: fabs(0x000FFFFFFFFFFFFE) -&gt; 0x000FFFFFFFFFFFFE errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">21</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 16: fabs(0x0005555555555554) -&gt; 0x0005555555555554 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">21</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 16: fabs(0x0005555555555554) -&gt; 0x0005555555555554 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">22</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 17: fabs(0x000AAAAAAAAAAAAA) -&gt; 0x000AAAAAAAAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">22</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 17: fabs(0x000AAAAAAAAAAAAA) -&gt; 0x000AAAAAAAAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">23</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 18: fabs(0x000FFFFFFFFFFFFD) -&gt; 0x000FFFFFFFFFFFFD errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">23</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 18: fabs(0x000FFFFFFFFFFFFD) -&gt; 0x000FFFFFFFFFFFFD errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">24</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 19: fabs(0x0005555555555555) -&gt; 0x0005555555555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">24</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 19: fabs(0x0005555555555555) -&gt; 0x0005555555555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">25</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 20: fabs(0x000AAAAAAAAAAAA8) -&gt; 0x000AAAAAAAAAAAA8 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">25</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 20: fabs(0x000AAAAAAAAAAAA8) -&gt; 0x000AAAAAAAAAAAA8 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">26</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 21: fabs(0x0000000000000007) -&gt; 0x0000000000000007 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">26</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 21: fabs(0x0000000000000007) -&gt; 0x0000000000000007 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">27</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 22: fabs(0x0000000000000008) -&gt; 0x0000000000000008 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">27</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 22: fabs(0x0000000000000008) -&gt; 0x0000000000000008 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">28</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 23: fabs(0x0000000000000005) -&gt; 0x0000000000000005 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">28</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 23: fabs(0x0000000000000005) -&gt; 0x0000000000000005 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">29</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 24: fabs(0x0000000000000002) -&gt; 0x0000000000000002 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">29</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 24: fabs(0x0000000000000002) -&gt; 0x0000000000000002 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">30</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 25: fabs(0x000FFFFFFFFFFFF8) -&gt; 0x000FFFFFFFFFFFF8 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">30</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 25: fabs(0x000FFFFFFFFFFFF8) -&gt; 0x000FFFFFFFFFFFF8 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">31</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 26: fabs(0x0005555555555550) -&gt; 0x0005555555555550 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">31</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 26: fabs(0x0005555555555550) -&gt; 0x0005555555555550 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">32</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 27: fabs(0x000AAAAAAAAAAAA8) -&gt; 0x000AAAAAAAAAAAA8 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">32</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 27: fabs(0x000AAAAAAAAAAAA8) -&gt; 0x000AAAAAAAAAAAA8 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">33</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 28: fabs(0x000FFFFFFFFFFFF7) -&gt; 0x000FFFFFFFFFFFF7 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">33</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 28: fabs(0x000FFFFFFFFFFFF7) -&gt; 0x000FFFFFFFFFFFF7 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">34</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 29: fabs(0x0005555555555555) -&gt; 0x0005555555555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">34</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 29: fabs(0x0005555555555555) -&gt; 0x0005555555555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">35</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 30: fabs(0x000AAAAAAAAAAAA2) -&gt; 0x000AAAAAAAAAAAA2 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">35</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 30: fabs(0x000AAAAAAAAAAAA2) -&gt; 0x000AAAAAAAAAAAA2 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">36</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 31: fabs(0x000000000000003F) -&gt; 0x000000000000003F errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">36</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 31: fabs(0x000000000000003F) -&gt; 0x000000000000003F errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">37</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 32: fabs(0x0000000000000040) -&gt; 0x0000000000000040 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">37</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 32: fabs(0x0000000000000040) -&gt; 0x0000000000000040 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">38</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 33: fabs(0x0000000000000015) -&gt; 0x0000000000000015 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">38</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 33: fabs(0x0000000000000015) -&gt; 0x0000000000000015 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">39</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 34: fabs(0x000000000000002A) -&gt; 0x000000000000002A errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">39</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 34: fabs(0x000000000000002A) -&gt; 0x000000000000002A errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">40</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 35: fabs(0x000FFFFFFFFFFFC0) -&gt; 0x000FFFFFFFFFFFC0 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">40</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 35: fabs(0x000FFFFFFFFFFFC0) -&gt; 0x000FFFFFFFFFFFC0 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">41</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 36: fabs(0x0005555555555540) -&gt; 0x0005555555555540 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">41</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 36: fabs(0x0005555555555540) -&gt; 0x0005555555555540 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">42</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 37: fabs(0x000AAAAAAAAAAA80) -&gt; 0x000AAAAAAAAAAA80 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">42</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 37: fabs(0x000AAAAAAAAAAA80) -&gt; 0x000AAAAAAAAAAA80 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">43</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 38: fabs(0x000FFFFFFFFFFFBF) -&gt; 0x000FFFFFFFFFFFBF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">43</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 38: fabs(0x000FFFFFFFFFFFBF) -&gt; 0x000FFFFFFFFFFFBF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">44</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 39: fabs(0x0005555555555515) -&gt; 0x0005555555555515 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">44</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 39: fabs(0x0005555555555515) -&gt; 0x0005555555555515 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">45</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 40: fabs(0x000AAAAAAAAAAAAA) -&gt; 0x000AAAAAAAAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">45</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 40: fabs(0x000AAAAAAAAAAAAA) -&gt; 0x000AAAAAAAAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">46</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 41: fabs(0x00000000000003FF) -&gt; 0x00000000000003FF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">46</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 41: fabs(0x00000000000003FF) -&gt; 0x00000000000003FF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">47</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 42: fabs(0x0000000000000400) -&gt; 0x0000000000000400 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">47</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 42: fabs(0x0000000000000400) -&gt; 0x0000000000000400 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">48</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 43: fabs(0x0000000000000155) -&gt; 0x0000000000000155 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">48</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 43: fabs(0x0000000000000155) -&gt; 0x0000000000000155 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">49</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 44: fabs(0x00000000000002AA) -&gt; 0x00000000000002AA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">49</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 44: fabs(0x00000000000002AA) -&gt; 0x00000000000002AA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">50</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 45: fabs(0x000FFFFFFFFFFC00) -&gt; 0x000FFFFFFFFFFC00 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">50</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 45: fabs(0x000FFFFFFFFFFC00) -&gt; 0x000FFFFFFFFFFC00 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">51</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 46: fabs(0x0005555555555400) -&gt; 0x0005555555555400 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">51</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 46: fabs(0x0005555555555400) -&gt; 0x0005555555555400 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">52</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 47: fabs(0x000AAAAAAAAAA800) -&gt; 0x000AAAAAAAAAA800 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">52</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 47: fabs(0x000AAAAAAAAAA800) -&gt; 0x000AAAAAAAAAA800 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">53</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 48: fabs(0x000FFFFFFFFFFBFF) -&gt; 0x000FFFFFFFFFFBFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">53</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 48: fabs(0x000FFFFFFFFFFBFF) -&gt; 0x000FFFFFFFFFFBFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">54</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 49: fabs(0x0005555555555155) -&gt; 0x0005555555555155 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">54</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 49: fabs(0x0005555555555155) -&gt; 0x0005555555555155 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">55</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 50: fabs(0x000AAAAAAAAAAAAA) -&gt; 0x000AAAAAAAAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">55</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 50: fabs(0x000AAAAAAAAAAAAA) -&gt; 0x000AAAAAAAAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">56</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 51: fabs(0x0000000000007FFF) -&gt; 0x0000000000007FFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">56</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 51: fabs(0x0000000000007FFF) -&gt; 0x0000000000007FFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">57</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 52: fabs(0x0000000000008000) -&gt; 0x0000000000008000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">57</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 52: fabs(0x0000000000008000) -&gt; 0x0000000000008000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">58</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 53: fabs(0x0000000000005555) -&gt; 0x0000000000005555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">58</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 53: fabs(0x0000000000005555) -&gt; 0x0000000000005555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">59</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 54: fabs(0x0000000000002AAA) -&gt; 0x0000000000002AAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">59</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 54: fabs(0x0000000000002AAA) -&gt; 0x0000000000002AAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">60</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 55: fabs(0x000FFFFFFFFF8000) -&gt; 0x000FFFFFFFFF8000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">60</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 55: fabs(0x000FFFFFFFFF8000) -&gt; 0x000FFFFFFFFF8000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">61</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 56: fabs(0x0005555555550000) -&gt; 0x0005555555550000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">61</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 56: fabs(0x0005555555550000) -&gt; 0x0005555555550000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">62</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 57: fabs(0x000AAAAAAAAA8000) -&gt; 0x000AAAAAAAAA8000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">62</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 57: fabs(0x000AAAAAAAAA8000) -&gt; 0x000AAAAAAAAA8000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">63</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 58: fabs(0x000FFFFFFFFF7FFF) -&gt; 0x000FFFFFFFFF7FFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">63</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 58: fabs(0x000FFFFFFFFF7FFF) -&gt; 0x000FFFFFFFFF7FFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">64</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 59: fabs(0x0005555555555555) -&gt; 0x0005555555555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">64</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 59: fabs(0x0005555555555555) -&gt; 0x0005555555555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">65</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 60: fabs(0x000AAAAAAAAA2AAA) -&gt; 0x000AAAAAAAAA2AAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">65</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 60: fabs(0x000AAAAAAAAA2AAA) -&gt; 0x000AAAAAAAAA2AAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">66</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 61: fabs(0x00000000001FFFFF) -&gt; 0x00000000001FFFFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">66</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 61: fabs(0x00000000001FFFFF) -&gt; 0x00000000001FFFFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">67</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 62: fabs(0x0000000000200000) -&gt; 0x0000000000200000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">67</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 62: fabs(0x0000000000200000) -&gt; 0x0000000000200000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">68</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 63: fabs(0x0000000000155555) -&gt; 0x0000000000155555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">68</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 63: fabs(0x0000000000155555) -&gt; 0x0000000000155555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">69</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 64: fabs(0x00000000000AAAAA) -&gt; 0x00000000000AAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">69</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 64: fabs(0x00000000000AAAAA) -&gt; 0x00000000000AAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">70</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 65: fabs(0x000FFFFFFFE00000) -&gt; 0x000FFFFFFFE00000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">70</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 65: fabs(0x000FFFFFFFE00000) -&gt; 0x000FFFFFFFE00000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">71</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 66: fabs(0x0005555555400000) -&gt; 0x0005555555400000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">71</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 66: fabs(0x0005555555400000) -&gt; 0x0005555555400000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">72</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 67: fabs(0x000AAAAAAAA00000) -&gt; 0x000AAAAAAAA00000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">72</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 67: fabs(0x000AAAAAAAA00000) -&gt; 0x000AAAAAAAA00000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">73</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 68: fabs(0x000FFFFFFFDFFFFF) -&gt; 0x000FFFFFFFDFFFFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">73</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 68: fabs(0x000FFFFFFFDFFFFF) -&gt; 0x000FFFFFFFDFFFFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">74</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 69: fabs(0x0005555555555555) -&gt; 0x0005555555555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">74</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 69: fabs(0x0005555555555555) -&gt; 0x0005555555555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">75</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 70: fabs(0x000AAAAAAA8AAAAA) -&gt; 0x000AAAAAAA8AAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">75</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 70: fabs(0x000AAAAAAA8AAAAA) -&gt; 0x000AAAAAAA8AAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">76</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 71: fabs(0x000000000FFFFFFF) -&gt; 0x000000000FFFFFFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">76</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 71: fabs(0x000000000FFFFFFF) -&gt; 0x000000000FFFFFFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">77</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 72: fabs(0x0000000010000000) -&gt; 0x0000000010000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">77</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 72: fabs(0x0000000010000000) -&gt; 0x0000000010000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">78</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 73: fabs(0x0000000005555555) -&gt; 0x0000000005555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">78</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 73: fabs(0x0000000005555555) -&gt; 0x0000000005555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">79</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 74: fabs(0x000000000AAAAAAA) -&gt; 0x000000000AAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">79</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 74: fabs(0x000000000AAAAAAA) -&gt; 0x000000000AAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">80</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 75: fabs(0x000FFFFFF0000000) -&gt; 0x000FFFFFF0000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">80</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 75: fabs(0x000FFFFFF0000000) -&gt; 0x000FFFFFF0000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">81</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 76: fabs(0x0005555550000000) -&gt; 0x0005555550000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">81</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 76: fabs(0x0005555550000000) -&gt; 0x0005555550000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">82</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 77: fabs(0x000AAAAAA0000000) -&gt; 0x000AAAAAA0000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">82</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 77: fabs(0x000AAAAAA0000000) -&gt; 0x000AAAAAA0000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">83</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 78: fabs(0x000FFFFFEFFFFFFF) -&gt; 0x000FFFFFEFFFFFFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">83</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 78: fabs(0x000FFFFFEFFFFFFF) -&gt; 0x000FFFFFEFFFFFFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">84</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 79: fabs(0x0005555545555555) -&gt; 0x0005555545555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">84</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 79: fabs(0x0005555545555555) -&gt; 0x0005555545555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">85</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 80: fabs(0x000AAAAAAAAAAAAA) -&gt; 0x000AAAAAAAAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">85</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 80: fabs(0x000AAAAAAAAAAAAA) -&gt; 0x000AAAAAAAAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">86</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 81: fabs(0x0000000FFFFFFFFF) -&gt; 0x0000000FFFFFFFFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">86</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 81: fabs(0x0000000FFFFFFFFF) -&gt; 0x0000000FFFFFFFFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">87</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 82: fabs(0x0000001000000000) -&gt; 0x0000001000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">87</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 82: fabs(0x0000001000000000) -&gt; 0x0000001000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">88</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 83: fabs(0x0000000555555555) -&gt; 0x0000000555555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">88</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 83: fabs(0x0000000555555555) -&gt; 0x0000000555555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">89</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 84: fabs(0x0000000AAAAAAAAA) -&gt; 0x0000000AAAAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">89</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 84: fabs(0x0000000AAAAAAAAA) -&gt; 0x0000000AAAAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">90</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 85: fabs(0x000FFFF000000000) -&gt; 0x000FFFF000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">90</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 85: fabs(0x000FFFF000000000) -&gt; 0x000FFFF000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">91</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 86: fabs(0x0005555000000000) -&gt; 0x0005555000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">91</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 86: fabs(0x0005555000000000) -&gt; 0x0005555000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">92</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 87: fabs(0x000AAAA000000000) -&gt; 0x000AAAA000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">92</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 87: fabs(0x000AAAA000000000) -&gt; 0x000AAAA000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">93</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 88: fabs(0x000FFFEFFFFFFFFF) -&gt; 0x000FFFEFFFFFFFFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">93</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 88: fabs(0x000FFFEFFFFFFFFF) -&gt; 0x000FFFEFFFFFFFFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">94</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 89: fabs(0x0005554555555555) -&gt; 0x0005554555555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">94</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 89: fabs(0x0005554555555555) -&gt; 0x0005554555555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">95</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 90: fabs(0x000AAAAAAAAAAAAA) -&gt; 0x000AAAAAAAAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">95</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 90: fabs(0x000AAAAAAAAAAAAA) -&gt; 0x000AAAAAAAAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">96</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 91: fabs(0x00001FFFFFFFFFFF) -&gt; 0x00001FFFFFFFFFFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">96</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 91: fabs(0x00001FFFFFFFFFFF) -&gt; 0x00001FFFFFFFFFFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">97</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 92: fabs(0x0000200000000000) -&gt; 0x0000200000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">97</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 92: fabs(0x0000200000000000) -&gt; 0x0000200000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">98</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 93: fabs(0x0000155555555555) -&gt; 0x0000155555555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">98</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 93: fabs(0x0000155555555555) -&gt; 0x0000155555555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">99</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 94: fabs(0x00000AAAAAAAAAAA) -&gt; 0x00000AAAAAAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">99</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 94: fabs(0x00000AAAAAAAAAAA) -&gt; 0x00000AAAAAAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">100</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 95: fabs(0x000FE00000000000) -&gt; 0x000FE00000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">100</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 95: fabs(0x000FE00000000000) -&gt; 0x000FE00000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">101</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 96: fabs(0x0005400000000000) -&gt; 0x0005400000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">101</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 96: fabs(0x0005400000000000) -&gt; 0x0005400000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">102</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 97: fabs(0x000AA00000000000) -&gt; 0x000AA00000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">102</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 97: fabs(0x000AA00000000000) -&gt; 0x000AA00000000000 errno 0</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">103</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 98: fabs(0x000FDFFFFFFFFFFF) -&gt; 0x000FDFFFFFFFFFFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">103</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 98: fabs(0x000FDFFFFFFFFFFF) -&gt; 0x000FDFFFFFFFFFFF errno 0</td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">454565</td>
+<td class="TextItemSame Wrap">454560: fabs(0xFFFFFFFFFFFFFFFE) -&gt; 0x7FFFFFFFFFFFFFFE errno 0</td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">454565</td>
+<td class="TextItemSame Wrap">454560: fabs(0xFFFFFFFFFFFFFFFE) -&gt; 0x7FFFFFFFFFFFFFFE errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454566</td>
+<td class="TextItemSame Wrap">454561: fabs(0xFFF5555555555554) -&gt; 0x7FF5555555555554 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454566</td>
+<td class="TextItemSame Wrap">454561: fabs(0xFFF5555555555554) -&gt; 0x7FF5555555555554 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454567</td>
+<td class="TextItemSame Wrap">454562: fabs(0xFFFAAAAAAAAAAAAA) -&gt; 0x7FFAAAAAAAAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454567</td>
+<td class="TextItemSame Wrap">454562: fabs(0xFFFAAAAAAAAAAAAA) -&gt; 0x7FFAAAAAAAAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454568</td>
+<td class="TextItemSame Wrap">454563: fabs(0xFFFFFFFFFFFFFFFD) -&gt; 0x7FFFFFFFFFFFFFFD errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454568</td>
+<td class="TextItemSame Wrap">454563: fabs(0xFFFFFFFFFFFFFFFD) -&gt; 0x7FFFFFFFFFFFFFFD errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454569</td>
+<td class="TextItemSame Wrap">454564: fabs(0xFFF5555555555555) -&gt; 0x7FF5555555555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454569</td>
+<td class="TextItemSame Wrap">454564: fabs(0xFFF5555555555555) -&gt; 0x7FF5555555555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454570</td>
+<td class="TextItemSame Wrap">454565: fabs(0xFFFAAAAAAAAAAAA8) -&gt; 0x7FFAAAAAAAAAAAA8 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454570</td>
+<td class="TextItemSame Wrap">454565: fabs(0xFFFAAAAAAAAAAAA8) -&gt; 0x7FFAAAAAAAAAAAA8 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454571</td>
+<td class="TextItemSame Wrap">454566: fabs(0xFFF0000000000007) -&gt; 0x7FF0000000000007 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454571</td>
+<td class="TextItemSame Wrap">454566: fabs(0xFFF0000000000007) -&gt; 0x7FF0000000000007 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454572</td>
+<td class="TextItemSame Wrap">454567: fabs(0xFFF0000000000008) -&gt; 0x7FF0000000000008 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454572</td>
+<td class="TextItemSame Wrap">454567: fabs(0xFFF0000000000008) -&gt; 0x7FF0000000000008 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454573</td>
+<td class="TextItemSame Wrap">454568: fabs(0xFFF0000000000005) -&gt; 0x7FF0000000000005 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454573</td>
+<td class="TextItemSame Wrap">454568: fabs(0xFFF0000000000005) -&gt; 0x7FF0000000000005 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454574</td>
+<td class="TextItemSame Wrap">454569: fabs(0xFFF0000000000002) -&gt; 0x7FF0000000000002 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454574</td>
+<td class="TextItemSame Wrap">454569: fabs(0xFFF0000000000002) -&gt; 0x7FF0000000000002 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454575</td>
+<td class="TextItemSame Wrap">454570: fabs(0xFFFFFFFFFFFFFFF8) -&gt; 0x7FFFFFFFFFFFFFF8 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454575</td>
+<td class="TextItemSame Wrap">454570: fabs(0xFFFFFFFFFFFFFFF8) -&gt; 0x7FFFFFFFFFFFFFF8 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454576</td>
+<td class="TextItemSame Wrap">454571: fabs(0xFFF5555555555550) -&gt; 0x7FF5555555555550 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454576</td>
+<td class="TextItemSame Wrap">454571: fabs(0xFFF5555555555550) -&gt; 0x7FF5555555555550 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454577</td>
+<td class="TextItemSame Wrap">454572: fabs(0xFFFAAAAAAAAAAAA8) -&gt; 0x7FFAAAAAAAAAAAA8 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454577</td>
+<td class="TextItemSame Wrap">454572: fabs(0xFFFAAAAAAAAAAAA8) -&gt; 0x7FFAAAAAAAAAAAA8 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454578</td>
+<td class="TextItemSame Wrap">454573: fabs(0xFFFFFFFFFFFFFFF7) -&gt; 0x7FFFFFFFFFFFFFF7 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454578</td>
+<td class="TextItemSame Wrap">454573: fabs(0xFFFFFFFFFFFFFFF7) -&gt; 0x7FFFFFFFFFFFFFF7 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454579</td>
+<td class="TextItemSame Wrap">454574: fabs(0xFFF5555555555555) -&gt; 0x7FF5555555555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454579</td>
+<td class="TextItemSame Wrap">454574: fabs(0xFFF5555555555555) -&gt; 0x7FF5555555555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454580</td>
+<td class="TextItemSame Wrap">454575: fabs(0xFFFAAAAAAAAAAAA2) -&gt; 0x7FFAAAAAAAAAAAA2 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454580</td>
+<td class="TextItemSame Wrap">454575: fabs(0xFFFAAAAAAAAAAAA2) -&gt; 0x7FFAAAAAAAAAAAA2 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454581</td>
+<td class="TextItemSame Wrap">454576: fabs(0xFFF000000000003F) -&gt; 0x7FF000000000003F errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454581</td>
+<td class="TextItemSame Wrap">454576: fabs(0xFFF000000000003F) -&gt; 0x7FF000000000003F errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454582</td>
+<td class="TextItemSame Wrap">454577: fabs(0xFFF0000000000040) -&gt; 0x7FF0000000000040 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454582</td>
+<td class="TextItemSame Wrap">454577: fabs(0xFFF0000000000040) -&gt; 0x7FF0000000000040 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454583</td>
+<td class="TextItemSame Wrap">454578: fabs(0xFFF0000000000015) -&gt; 0x7FF0000000000015 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454583</td>
+<td class="TextItemSame Wrap">454578: fabs(0xFFF0000000000015) -&gt; 0x7FF0000000000015 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454584</td>
+<td class="TextItemSame Wrap">454579: fabs(0xFFF000000000002A) -&gt; 0x7FF000000000002A errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454584</td>
+<td class="TextItemSame Wrap">454579: fabs(0xFFF000000000002A) -&gt; 0x7FF000000000002A errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454585</td>
+<td class="TextItemSame Wrap">454580: fabs(0xFFFFFFFFFFFFFFC0) -&gt; 0x7FFFFFFFFFFFFFC0 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454585</td>
+<td class="TextItemSame Wrap">454580: fabs(0xFFFFFFFFFFFFFFC0) -&gt; 0x7FFFFFFFFFFFFFC0 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454586</td>
+<td class="TextItemSame Wrap">454581: fabs(0xFFF5555555555540) -&gt; 0x7FF5555555555540 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454586</td>
+<td class="TextItemSame Wrap">454581: fabs(0xFFF5555555555540) -&gt; 0x7FF5555555555540 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454587</td>
+<td class="TextItemSame Wrap">454582: fabs(0xFFFAAAAAAAAAAA80) -&gt; 0x7FFAAAAAAAAAAA80 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454587</td>
+<td class="TextItemSame Wrap">454582: fabs(0xFFFAAAAAAAAAAA80) -&gt; 0x7FFAAAAAAAAAAA80 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454588</td>
+<td class="TextItemSame Wrap">454583: fabs(0xFFFFFFFFFFFFFFBF) -&gt; 0x7FFFFFFFFFFFFFBF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454588</td>
+<td class="TextItemSame Wrap">454583: fabs(0xFFFFFFFFFFFFFFBF) -&gt; 0x7FFFFFFFFFFFFFBF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454589</td>
+<td class="TextItemSame Wrap">454584: fabs(0xFFF5555555555515) -&gt; 0x7FF5555555555515 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454589</td>
+<td class="TextItemSame Wrap">454584: fabs(0xFFF5555555555515) -&gt; 0x7FF5555555555515 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454590</td>
+<td class="TextItemSame Wrap">454585: fabs(0xFFFAAAAAAAAAAAAA) -&gt; 0x7FFAAAAAAAAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454590</td>
+<td class="TextItemSame Wrap">454585: fabs(0xFFFAAAAAAAAAAAAA) -&gt; 0x7FFAAAAAAAAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454591</td>
+<td class="TextItemSame Wrap">454586: fabs(0xFFF00000000003FF) -&gt; 0x7FF00000000003FF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454591</td>
+<td class="TextItemSame Wrap">454586: fabs(0xFFF00000000003FF) -&gt; 0x7FF00000000003FF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454592</td>
+<td class="TextItemSame Wrap">454587: fabs(0xFFF0000000000400) -&gt; 0x7FF0000000000400 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454592</td>
+<td class="TextItemSame Wrap">454587: fabs(0xFFF0000000000400) -&gt; 0x7FF0000000000400 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454593</td>
+<td class="TextItemSame Wrap">454588: fabs(0xFFF0000000000155) -&gt; 0x7FF0000000000155 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454593</td>
+<td class="TextItemSame Wrap">454588: fabs(0xFFF0000000000155) -&gt; 0x7FF0000000000155 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454594</td>
+<td class="TextItemSame Wrap">454589: fabs(0xFFF00000000002AA) -&gt; 0x7FF00000000002AA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454594</td>
+<td class="TextItemSame Wrap">454589: fabs(0xFFF00000000002AA) -&gt; 0x7FF00000000002AA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454595</td>
+<td class="TextItemSame Wrap">454590: fabs(0xFFFFFFFFFFFFFC00) -&gt; 0x7FFFFFFFFFFFFC00 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454595</td>
+<td class="TextItemSame Wrap">454590: fabs(0xFFFFFFFFFFFFFC00) -&gt; 0x7FFFFFFFFFFFFC00 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454596</td>
+<td class="TextItemSame Wrap">454591: fabs(0xFFF5555555555400) -&gt; 0x7FF5555555555400 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454596</td>
+<td class="TextItemSame Wrap">454591: fabs(0xFFF5555555555400) -&gt; 0x7FF5555555555400 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454597</td>
+<td class="TextItemSame Wrap">454592: fabs(0xFFFAAAAAAAAAA800) -&gt; 0x7FFAAAAAAAAAA800 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454597</td>
+<td class="TextItemSame Wrap">454592: fabs(0xFFFAAAAAAAAAA800) -&gt; 0x7FFAAAAAAAAAA800 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454598</td>
+<td class="TextItemSame Wrap">454593: fabs(0xFFFFFFFFFFFFFBFF) -&gt; 0x7FFFFFFFFFFFFBFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454598</td>
+<td class="TextItemSame Wrap">454593: fabs(0xFFFFFFFFFFFFFBFF) -&gt; 0x7FFFFFFFFFFFFBFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454599</td>
+<td class="TextItemSame Wrap">454594: fabs(0xFFF5555555555155) -&gt; 0x7FF5555555555155 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454599</td>
+<td class="TextItemSame Wrap">454594: fabs(0xFFF5555555555155) -&gt; 0x7FF5555555555155 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454600</td>
+<td class="TextItemSame Wrap">454595: fabs(0xFFFAAAAAAAAAAAAA) -&gt; 0x7FFAAAAAAAAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454600</td>
+<td class="TextItemSame Wrap">454595: fabs(0xFFFAAAAAAAAAAAAA) -&gt; 0x7FFAAAAAAAAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454601</td>
+<td class="TextItemSame Wrap">454596: fabs(0xFFF0000000007FFF) -&gt; 0x7FF0000000007FFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454601</td>
+<td class="TextItemSame Wrap">454596: fabs(0xFFF0000000007FFF) -&gt; 0x7FF0000000007FFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454602</td>
+<td class="TextItemSame Wrap">454597: fabs(0xFFF0000000008000) -&gt; 0x7FF0000000008000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454602</td>
+<td class="TextItemSame Wrap">454597: fabs(0xFFF0000000008000) -&gt; 0x7FF0000000008000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454603</td>
+<td class="TextItemSame Wrap">454598: fabs(0xFFF0000000005555) -&gt; 0x7FF0000000005555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454603</td>
+<td class="TextItemSame Wrap">454598: fabs(0xFFF0000000005555) -&gt; 0x7FF0000000005555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454604</td>
+<td class="TextItemSame Wrap">454599: fabs(0xFFF0000000002AAA) -&gt; 0x7FF0000000002AAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454604</td>
+<td class="TextItemSame Wrap">454599: fabs(0xFFF0000000002AAA) -&gt; 0x7FF0000000002AAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454605</td>
+<td class="TextItemSame Wrap">454600: fabs(0xFFFFFFFFFFFF8000) -&gt; 0x7FFFFFFFFFFF8000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454605</td>
+<td class="TextItemSame Wrap">454600: fabs(0xFFFFFFFFFFFF8000) -&gt; 0x7FFFFFFFFFFF8000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454606</td>
+<td class="TextItemSame Wrap">454601: fabs(0xFFF5555555550000) -&gt; 0x7FF5555555550000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454606</td>
+<td class="TextItemSame Wrap">454601: fabs(0xFFF5555555550000) -&gt; 0x7FF5555555550000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454607</td>
+<td class="TextItemSame Wrap">454602: fabs(0xFFFAAAAAAAAA8000) -&gt; 0x7FFAAAAAAAAA8000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454607</td>
+<td class="TextItemSame Wrap">454602: fabs(0xFFFAAAAAAAAA8000) -&gt; 0x7FFAAAAAAAAA8000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454608</td>
+<td class="TextItemSame Wrap">454603: fabs(0xFFFFFFFFFFFF7FFF) -&gt; 0x7FFFFFFFFFFF7FFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454608</td>
+<td class="TextItemSame Wrap">454603: fabs(0xFFFFFFFFFFFF7FFF) -&gt; 0x7FFFFFFFFFFF7FFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454609</td>
+<td class="TextItemSame Wrap">454604: fabs(0xFFF5555555555555) -&gt; 0x7FF5555555555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454609</td>
+<td class="TextItemSame Wrap">454604: fabs(0xFFF5555555555555) -&gt; 0x7FF5555555555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454610</td>
+<td class="TextItemSame Wrap">454605: fabs(0xFFFAAAAAAAAA2AAA) -&gt; 0x7FFAAAAAAAAA2AAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454610</td>
+<td class="TextItemSame Wrap">454605: fabs(0xFFFAAAAAAAAA2AAA) -&gt; 0x7FFAAAAAAAAA2AAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454611</td>
+<td class="TextItemSame Wrap">454606: fabs(0xFFF00000001FFFFF) -&gt; 0x7FF00000001FFFFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454611</td>
+<td class="TextItemSame Wrap">454606: fabs(0xFFF00000001FFFFF) -&gt; 0x7FF00000001FFFFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454612</td>
+<td class="TextItemSame Wrap">454607: fabs(0xFFF0000000200000) -&gt; 0x7FF0000000200000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454612</td>
+<td class="TextItemSame Wrap">454607: fabs(0xFFF0000000200000) -&gt; 0x7FF0000000200000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454613</td>
+<td class="TextItemSame Wrap">454608: fabs(0xFFF0000000155555) -&gt; 0x7FF0000000155555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454613</td>
+<td class="TextItemSame Wrap">454608: fabs(0xFFF0000000155555) -&gt; 0x7FF0000000155555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454614</td>
+<td class="TextItemSame Wrap">454609: fabs(0xFFF00000000AAAAA) -&gt; 0x7FF00000000AAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454614</td>
+<td class="TextItemSame Wrap">454609: fabs(0xFFF00000000AAAAA) -&gt; 0x7FF00000000AAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454615</td>
+<td class="TextItemSame Wrap">454610: fabs(0xFFFFFFFFFFE00000) -&gt; 0x7FFFFFFFFFE00000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454615</td>
+<td class="TextItemSame Wrap">454610: fabs(0xFFFFFFFFFFE00000) -&gt; 0x7FFFFFFFFFE00000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454616</td>
+<td class="TextItemSame Wrap">454611: fabs(0xFFF5555555400000) -&gt; 0x7FF5555555400000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454616</td>
+<td class="TextItemSame Wrap">454611: fabs(0xFFF5555555400000) -&gt; 0x7FF5555555400000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454617</td>
+<td class="TextItemSame Wrap">454612: fabs(0xFFFAAAAAAAA00000) -&gt; 0x7FFAAAAAAAA00000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454617</td>
+<td class="TextItemSame Wrap">454612: fabs(0xFFFAAAAAAAA00000) -&gt; 0x7FFAAAAAAAA00000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454618</td>
+<td class="TextItemSame Wrap">454613: fabs(0xFFFFFFFFFFDFFFFF) -&gt; 0x7FFFFFFFFFDFFFFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454618</td>
+<td class="TextItemSame Wrap">454613: fabs(0xFFFFFFFFFFDFFFFF) -&gt; 0x7FFFFFFFFFDFFFFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454619</td>
+<td class="TextItemSame Wrap">454614: fabs(0xFFF5555555555555) -&gt; 0x7FF5555555555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454619</td>
+<td class="TextItemSame Wrap">454614: fabs(0xFFF5555555555555) -&gt; 0x7FF5555555555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454620</td>
+<td class="TextItemSame Wrap">454615: fabs(0xFFFAAAAAAA8AAAAA) -&gt; 0x7FFAAAAAAA8AAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454620</td>
+<td class="TextItemSame Wrap">454615: fabs(0xFFFAAAAAAA8AAAAA) -&gt; 0x7FFAAAAAAA8AAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454621</td>
+<td class="TextItemSame Wrap">454616: fabs(0xFFF000000FFFFFFF) -&gt; 0x7FF000000FFFFFFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454621</td>
+<td class="TextItemSame Wrap">454616: fabs(0xFFF000000FFFFFFF) -&gt; 0x7FF000000FFFFFFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454622</td>
+<td class="TextItemSame Wrap">454617: fabs(0xFFF0000010000000) -&gt; 0x7FF0000010000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454622</td>
+<td class="TextItemSame Wrap">454617: fabs(0xFFF0000010000000) -&gt; 0x7FF0000010000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454623</td>
+<td class="TextItemSame Wrap">454618: fabs(0xFFF0000005555555) -&gt; 0x7FF0000005555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454623</td>
+<td class="TextItemSame Wrap">454618: fabs(0xFFF0000005555555) -&gt; 0x7FF0000005555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454624</td>
+<td class="TextItemSame Wrap">454619: fabs(0xFFF000000AAAAAAA) -&gt; 0x7FF000000AAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454624</td>
+<td class="TextItemSame Wrap">454619: fabs(0xFFF000000AAAAAAA) -&gt; 0x7FF000000AAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454625</td>
+<td class="TextItemSame Wrap">454620: fabs(0xFFFFFFFFF0000000) -&gt; 0x7FFFFFFFF0000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454625</td>
+<td class="TextItemSame Wrap">454620: fabs(0xFFFFFFFFF0000000) -&gt; 0x7FFFFFFFF0000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454626</td>
+<td class="TextItemSame Wrap">454621: fabs(0xFFF5555550000000) -&gt; 0x7FF5555550000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454626</td>
+<td class="TextItemSame Wrap">454621: fabs(0xFFF5555550000000) -&gt; 0x7FF5555550000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454627</td>
+<td class="TextItemSame Wrap">454622: fabs(0xFFFAAAAAA0000000) -&gt; 0x7FFAAAAAA0000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454627</td>
+<td class="TextItemSame Wrap">454622: fabs(0xFFFAAAAAA0000000) -&gt; 0x7FFAAAAAA0000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454628</td>
+<td class="TextItemSame Wrap">454623: fabs(0xFFFFFFFFEFFFFFFF) -&gt; 0x7FFFFFFFEFFFFFFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454628</td>
+<td class="TextItemSame Wrap">454623: fabs(0xFFFFFFFFEFFFFFFF) -&gt; 0x7FFFFFFFEFFFFFFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454629</td>
+<td class="TextItemSame Wrap">454624: fabs(0xFFF5555545555555) -&gt; 0x7FF5555545555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454629</td>
+<td class="TextItemSame Wrap">454624: fabs(0xFFF5555545555555) -&gt; 0x7FF5555545555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454630</td>
+<td class="TextItemSame Wrap">454625: fabs(0xFFFAAAAAAAAAAAAA) -&gt; 0x7FFAAAAAAAAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454630</td>
+<td class="TextItemSame Wrap">454625: fabs(0xFFFAAAAAAAAAAAAA) -&gt; 0x7FFAAAAAAAAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454631</td>
+<td class="TextItemSame Wrap">454626: fabs(0xFFF0000FFFFFFFFF) -&gt; 0x7FF0000FFFFFFFFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454631</td>
+<td class="TextItemSame Wrap">454626: fabs(0xFFF0000FFFFFFFFF) -&gt; 0x7FF0000FFFFFFFFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454632</td>
+<td class="TextItemSame Wrap">454627: fabs(0xFFF0001000000000) -&gt; 0x7FF0001000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454632</td>
+<td class="TextItemSame Wrap">454627: fabs(0xFFF0001000000000) -&gt; 0x7FF0001000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454633</td>
+<td class="TextItemSame Wrap">454628: fabs(0xFFF0000555555555) -&gt; 0x7FF0000555555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454633</td>
+<td class="TextItemSame Wrap">454628: fabs(0xFFF0000555555555) -&gt; 0x7FF0000555555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454634</td>
+<td class="TextItemSame Wrap">454629: fabs(0xFFF0000AAAAAAAAA) -&gt; 0x7FF0000AAAAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454634</td>
+<td class="TextItemSame Wrap">454629: fabs(0xFFF0000AAAAAAAAA) -&gt; 0x7FF0000AAAAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454635</td>
+<td class="TextItemSame Wrap">454630: fabs(0xFFFFFFF000000000) -&gt; 0x7FFFFFF000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454635</td>
+<td class="TextItemSame Wrap">454630: fabs(0xFFFFFFF000000000) -&gt; 0x7FFFFFF000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454636</td>
+<td class="TextItemSame Wrap">454631: fabs(0xFFF5555000000000) -&gt; 0x7FF5555000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454636</td>
+<td class="TextItemSame Wrap">454631: fabs(0xFFF5555000000000) -&gt; 0x7FF5555000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454637</td>
+<td class="TextItemSame Wrap">454632: fabs(0xFFFAAAA000000000) -&gt; 0x7FFAAAA000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454637</td>
+<td class="TextItemSame Wrap">454632: fabs(0xFFFAAAA000000000) -&gt; 0x7FFAAAA000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454638</td>
+<td class="TextItemSame Wrap">454633: fabs(0xFFFFFFEFFFFFFFFF) -&gt; 0x7FFFFFEFFFFFFFFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454638</td>
+<td class="TextItemSame Wrap">454633: fabs(0xFFFFFFEFFFFFFFFF) -&gt; 0x7FFFFFEFFFFFFFFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454639</td>
+<td class="TextItemSame Wrap">454634: fabs(0xFFF5554555555555) -&gt; 0x7FF5554555555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454639</td>
+<td class="TextItemSame Wrap">454634: fabs(0xFFF5554555555555) -&gt; 0x7FF5554555555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454640</td>
+<td class="TextItemSame Wrap">454635: fabs(0xFFFAAAAAAAAAAAAA) -&gt; 0x7FFAAAAAAAAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454640</td>
+<td class="TextItemSame Wrap">454635: fabs(0xFFFAAAAAAAAAAAAA) -&gt; 0x7FFAAAAAAAAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454641</td>
+<td class="TextItemSame Wrap">454636: fabs(0xFFF01FFFFFFFFFFF) -&gt; 0x7FF01FFFFFFFFFFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454641</td>
+<td class="TextItemSame Wrap">454636: fabs(0xFFF01FFFFFFFFFFF) -&gt; 0x7FF01FFFFFFFFFFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454642</td>
+<td class="TextItemSame Wrap">454637: fabs(0xFFF0200000000000) -&gt; 0x7FF0200000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454642</td>
+<td class="TextItemSame Wrap">454637: fabs(0xFFF0200000000000) -&gt; 0x7FF0200000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454643</td>
+<td class="TextItemSame Wrap">454638: fabs(0xFFF0155555555555) -&gt; 0x7FF0155555555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454643</td>
+<td class="TextItemSame Wrap">454638: fabs(0xFFF0155555555555) -&gt; 0x7FF0155555555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454644</td>
+<td class="TextItemSame Wrap">454639: fabs(0xFFF00AAAAAAAAAAA) -&gt; 0x7FF00AAAAAAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454644</td>
+<td class="TextItemSame Wrap">454639: fabs(0xFFF00AAAAAAAAAAA) -&gt; 0x7FF00AAAAAAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454645</td>
+<td class="TextItemSame Wrap">454640: fabs(0xFFFFE00000000000) -&gt; 0x7FFFE00000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454645</td>
+<td class="TextItemSame Wrap">454640: fabs(0xFFFFE00000000000) -&gt; 0x7FFFE00000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454646</td>
+<td class="TextItemSame Wrap">454641: fabs(0xFFF5400000000000) -&gt; 0x7FF5400000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454646</td>
+<td class="TextItemSame Wrap">454641: fabs(0xFFF5400000000000) -&gt; 0x7FF5400000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454647</td>
+<td class="TextItemSame Wrap">454642: fabs(0xFFFAA00000000000) -&gt; 0x7FFAA00000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454647</td>
+<td class="TextItemSame Wrap">454642: fabs(0xFFFAA00000000000) -&gt; 0x7FFAA00000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454648</td>
+<td class="TextItemSame Wrap">454643: fabs(0xFFFFDFFFFFFFFFFF) -&gt; 0x7FFFDFFFFFFFFFFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454648</td>
+<td class="TextItemSame Wrap">454643: fabs(0xFFFFDFFFFFFFFFFF) -&gt; 0x7FFFDFFFFFFFFFFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454649</td>
+<td class="TextItemSame Wrap">454644: fabs(0xFFF5555555555555) -&gt; 0x7FF5555555555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454649</td>
+<td class="TextItemSame Wrap">454644: fabs(0xFFF5555555555555) -&gt; 0x7FF5555555555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454650</td>
+<td class="TextItemSame Wrap">454645: fabs(0xFFFA8AAAAAAAAAAA) -&gt; 0x7FFA8AAAAAAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454650</td>
+<td class="TextItemSame Wrap">454645: fabs(0xFFFA8AAAAAAAAAAA) -&gt; 0x7FFA8AAAAAAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454651</td>
+<td class="TextItemSame Wrap">454646: fabs(0xFFF7FFFFFFFFFFFF) -&gt; 0x7FF7FFFFFFFFFFFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454651</td>
+<td class="TextItemSame Wrap">454646: fabs(0xFFF7FFFFFFFFFFFF) -&gt; 0x7FF7FFFFFFFFFFFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454652</td>
+<td class="TextItemSame Wrap">454647: fabs(0xFFF8000000000000) -&gt; 0x7FF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454652</td>
+<td class="TextItemSame Wrap">454647: fabs(0xFFF8000000000000) -&gt; 0x7FF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454653</td>
+<td class="TextItemSame Wrap">454648: fabs(0xFFF5555555555555) -&gt; 0x7FF5555555555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454653</td>
+<td class="TextItemSame Wrap">454648: fabs(0xFFF5555555555555) -&gt; 0x7FF5555555555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454654</td>
+<td class="TextItemSame Wrap">454649: fabs(0xFFF2AAAAAAAAAAAA) -&gt; 0x7FF2AAAAAAAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454654</td>
+<td class="TextItemSame Wrap">454649: fabs(0xFFF2AAAAAAAAAAAA) -&gt; 0x7FF2AAAAAAAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454655</td>
+<td class="TextItemSame Wrap">454650: fabs(0xFFF8000000000000) -&gt; 0x7FF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454655</td>
+<td class="TextItemSame Wrap">454650: fabs(0xFFF8000000000000) -&gt; 0x7FF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454656</td>
+<td class="TextItemSame Wrap">454651: fabs(0xFFF0000000000000) -&gt; 0x7FF0000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454656</td>
+<td class="TextItemSame Wrap">454651: fabs(0xFFF0000000000000) -&gt; 0x7FF0000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454657</td>
+<td class="TextItemSame Wrap">454652: fabs(0xFFF8000000000000) -&gt; 0x7FF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454657</td>
+<td class="TextItemSame Wrap">454652: fabs(0xFFF8000000000000) -&gt; 0x7FF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454658</td>
+<td class="TextItemSame Wrap">454653: fabs(0xFFF7FFFFFFFFFFFF) -&gt; 0x7FF7FFFFFFFFFFFF errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454658</td>
+<td class="TextItemSame Wrap">454653: fabs(0xFFF7FFFFFFFFFFFF) -&gt; 0x7FF7FFFFFFFFFFFF errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454659</td>
+<td class="TextItemSame Wrap">454654: fabs(0xFFF5555555555555) -&gt; 0x7FF5555555555555 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454659</td>
+<td class="TextItemSame Wrap">454654: fabs(0xFFF5555555555555) -&gt; 0x7FF5555555555555 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454660</td>
+<td class="TextItemSame Wrap">454655: fabs(0xFFF2AAAAAAAAAAAA) -&gt; 0x7FF2AAAAAAAAAAAA errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454660</td>
+<td class="TextItemSame Wrap">454655: fabs(0xFFF2AAAAAAAAAAAA) -&gt; 0x7FF2AAAAAAAAAAAA errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454661</td>
+<td class="TextItemSame Wrap">454656: fabs(0xFFF8000000000000) -&gt; 0x7FF8000000000000 errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454661</td>
+<td class="TextItemSame Wrap">454656: fabs(0xFFF8000000000000) -&gt; 0x7FF8000000000000 errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">454662</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454662</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">454663</td>
+<td class="TextItemSame Wrap">############################################################</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454663</td>
+<td class="TextItemSame Wrap">############################################################</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">454664</td>
+<td class="TextItemSigMod Wrap">current date and time: 2025-08-30 15:<span class="TextSegSigDiff">19</span>:3<span class="TextSegSigDiff">4</span></td>
+<td class="AlignCenter Wrap">&lt;&gt;</td>
+<td class="TextItemNum AlignRight Wrap">454664</td>
+<td class="TextItemSigMod Wrap">current date and time: 2025-08-30 15:<span class="TextSegSigDiff">20</span>:3<span class="TextSegSigDiff">7</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">454665</td>
+<td class="TextItemSame Wrap">overall measured samples: 454656</td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">454665</td>
+<td class="TextItemSame Wrap">overall measured samples: 454656</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">454666</td>
+<td class="TextItemSame Wrap">logged samples: 454656</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">454666</td>
+<td class="TextItemSame Wrap">logged samples: 454656</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">454667</td>
+<td class="TextItemSigMod Wrap">processing time: 00:00:0<span class="TextSegSigDiff">4</span></td>
+<td class="AlignCenter Wrap">&lt;&gt;</td>
+<td class="TextItemNum AlignRight Wrap">454667</td>
+<td class="TextItemSigMod Wrap">processing time: 00:00:0<span class="TextSegSigDiff">1</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">454668</td>
+<td class="TextItemSame Wrap">############################################################</td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">454668</td>
+<td class="TextItemSame Wrap">############################################################</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

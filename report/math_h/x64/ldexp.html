@@ -1,0 +1,1501 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+.AlignLeft { text-align: left; }
+.AlignCenter { text-align: center; }
+.AlignRight { text-align: right; }
+.Wrap { white-space: nowrap; }
+body { font-family: sans-serif; font-size: 11pt; }
+img.AutoScale { max-width: 100%; max-height: 100%; }
+td { vertical-align: top; padding-left: 4px; padding-right: 4px; }
+
+tr.SectionGap td { font-size: 4px; border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionBegin td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionMiddle td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SubsectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.SubsectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+table.fc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: monospace; font-size: 10pt; }
+td.TextItemInsigMod { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigOrphan { color: #000000; background-color: #FAEEFF; }
+td.TextItemNum { color: #696969; background-color: #F0F0F0; }
+td.TextItemSame { color: #000000; background-color: #FFFFFF; }
+td.TextItemSigMod { color: #000000; background-color: #FFE8E8; }
+td.TextItemSigOrphan { color: #000000; background-color: #F1E3FF; }
+.TextSegInsigDiff { color: #0000FF; }
+.TextSegReplacedDiff { color: #0000FF; font-style: italic; }
+.TextSegSigDiff { color: #FF0000; }
+td.TextItemInsigAdd { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigDel { color: #000000; background-color: #EEEEFF; text-decoration: line-through; }
+td.TextItemSigAdd { color: #000000; background-color: #FFE8E8; }
+td.TextItemSigDel { color: #000000; background-color: #FFE8E8; text-decoration: line-through; }
+</style>
+<title>ldexp(): toro C Library vs. Microsoft C Library</title>
+</head>
+<body>
+ldexp(): toro C Library vs. Microsoft C Library<br>
+Produced: 8/30/2025 3:38:36 PM<br>
+&nbsp; &nbsp;
+<br>
+Mode:&nbsp; Differences, With Context &nbsp;
+<br>
+Left file: R:\toroCVS\x64\toroWindows\ldexp.-.log&nbsp; &nbsp;&nbsp; Right file: R:\toroCVS\x64\msftWindows\ldexp.-.log &nbsp;
+<br>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">1</td>
+<td class="TextItemSame Wrap">############################################################################</td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">1</td>
+<td class="TextItemSame Wrap">############################################################################</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">2</td>
+<td class="TextItemSame Wrap">### toroCVS: ldexp() ######################################################</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">2</td>
+<td class="TextItemSame Wrap">### toroCVS: ldexp() ######################################################</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">3</td>
+<td class="TextItemSame Wrap">############################################################################</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">3</td>
+<td class="TextItemSame Wrap">############################################################################</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">4</td>
+<td class="TextItemSigMod Wrap">COMMANDLINE: R:\toroCVS\x64\t<span class="TextSegSigDiff">oro</span>Windows\ldexp /log /logfull&nbsp;</td>
+<td class="AlignCenter Wrap">&lt;&gt;</td>
+<td class="TextItemNum AlignRight Wrap">4</td>
+<td class="TextItemSigMod Wrap">COMMANDLINE: R:\toroCVS\x64\<span class="TextSegSigDiff">msf</span>tWindows\ldexp /log /logfull&nbsp;</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">5</td>
+<td class="TextItemSame Wrap">### __abort_behavior: 2</td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">5</td>
+<td class="TextItemSame Wrap">### __abort_behavior: 2</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">6</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 1: ldexp(0000000000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">6</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 1: ldexp(0000000000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">7</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 2: ldexp(0000000000000001, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">7</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 2: ldexp(0000000000000001, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">8</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 3: ldexp(0000000000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">8</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 3: ldexp(0000000000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">9</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 4: ldexp(0000000000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">9</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 4: ldexp(0000000000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">10</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 5: ldexp(000FFFFFFFFFFFFF, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">10</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 5: ldexp(000FFFFFFFFFFFFF, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">11</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 6: ldexp(0005555555555555, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">11</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 6: ldexp(0005555555555555, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">12</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 7: ldexp(000AAAAAAAAAAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">12</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 7: ldexp(000AAAAAAAAAAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">13</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 8: ldexp(000FFFFFFFFFFFFE, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">13</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 8: ldexp(000FFFFFFFFFFFFE, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">14</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 9: ldexp(0005555555555554, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">14</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; 9: ldexp(0005555555555554, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">15</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 10: ldexp(000AAAAAAAAAAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">15</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 10: ldexp(000AAAAAAAAAAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">16</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 11: ldexp(0000000000000001, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">16</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 11: ldexp(0000000000000001, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">17</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 12: ldexp(0000000000000002, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">17</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 12: ldexp(0000000000000002, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">18</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 13: ldexp(0000000000000001, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">18</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 13: ldexp(0000000000000001, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">19</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 14: ldexp(0000000000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">19</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 14: ldexp(0000000000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">20</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 15: ldexp(000FFFFFFFFFFFFE, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">20</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 15: ldexp(000FFFFFFFFFFFFE, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">21</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 16: ldexp(0005555555555554, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">21</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 16: ldexp(0005555555555554, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">22</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 17: ldexp(000AAAAAAAAAAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">22</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 17: ldexp(000AAAAAAAAAAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">23</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 18: ldexp(000FFFFFFFFFFFFD, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">23</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 18: ldexp(000FFFFFFFFFFFFD, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">24</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 19: ldexp(0005555555555555, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">24</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 19: ldexp(0005555555555555, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">25</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 20: ldexp(000AAAAAAAAAAAA8, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">25</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 20: ldexp(000AAAAAAAAAAAA8, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">26</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 21: ldexp(0000000000000007, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">26</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 21: ldexp(0000000000000007, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">27</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 22: ldexp(0000000000000008, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">27</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 22: ldexp(0000000000000008, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">28</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 23: ldexp(0000000000000005, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">28</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 23: ldexp(0000000000000005, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">29</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 24: ldexp(0000000000000002, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">29</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 24: ldexp(0000000000000002, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">30</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 25: ldexp(000FFFFFFFFFFFF8, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">30</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 25: ldexp(000FFFFFFFFFFFF8, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">31</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 26: ldexp(0005555555555550, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">31</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 26: ldexp(0005555555555550, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">32</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 27: ldexp(000AAAAAAAAAAAA8, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">32</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 27: ldexp(000AAAAAAAAAAAA8, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">33</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 28: ldexp(000FFFFFFFFFFFF7, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">33</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 28: ldexp(000FFFFFFFFFFFF7, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">34</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 29: ldexp(0005555555555555, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">34</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 29: ldexp(0005555555555555, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">35</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 30: ldexp(000AAAAAAAAAAAA2, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">35</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 30: ldexp(000AAAAAAAAAAAA2, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">36</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 31: ldexp(000000000000003F, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">36</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 31: ldexp(000000000000003F, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">37</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 32: ldexp(0000000000000040, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">37</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 32: ldexp(0000000000000040, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">38</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 33: ldexp(0000000000000015, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">38</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 33: ldexp(0000000000000015, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">39</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 34: ldexp(000000000000002A, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">39</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 34: ldexp(000000000000002A, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">40</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 35: ldexp(000FFFFFFFFFFFC0, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">40</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 35: ldexp(000FFFFFFFFFFFC0, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">41</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 36: ldexp(0005555555555540, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">41</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 36: ldexp(0005555555555540, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">42</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 37: ldexp(000AAAAAAAAAAA80, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">42</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 37: ldexp(000AAAAAAAAAAA80, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">43</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 38: ldexp(000FFFFFFFFFFFBF, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">43</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 38: ldexp(000FFFFFFFFFFFBF, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">44</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 39: ldexp(0005555555555515, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">44</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 39: ldexp(0005555555555515, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">45</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 40: ldexp(000AAAAAAAAAAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">45</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 40: ldexp(000AAAAAAAAAAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">46</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 41: ldexp(00000000000003FF, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">46</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 41: ldexp(00000000000003FF, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">47</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 42: ldexp(0000000000000400, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">47</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 42: ldexp(0000000000000400, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">48</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 43: ldexp(0000000000000155, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">48</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 43: ldexp(0000000000000155, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">49</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 44: ldexp(00000000000002AA, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">49</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 44: ldexp(00000000000002AA, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">50</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 45: ldexp(000FFFFFFFFFFC00, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">50</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 45: ldexp(000FFFFFFFFFFC00, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">51</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 46: ldexp(0005555555555400, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">51</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 46: ldexp(0005555555555400, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">52</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 47: ldexp(000AAAAAAAAAA800, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">52</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 47: ldexp(000AAAAAAAAAA800, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">53</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 48: ldexp(000FFFFFFFFFFBFF, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">53</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 48: ldexp(000FFFFFFFFFFBFF, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">54</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 49: ldexp(0005555555555155, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">54</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 49: ldexp(0005555555555155, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">55</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 50: ldexp(000AAAAAAAAAAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">55</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 50: ldexp(000AAAAAAAAAAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">56</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 51: ldexp(0000000000007FFF, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">56</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 51: ldexp(0000000000007FFF, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">57</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 52: ldexp(0000000000008000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">57</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 52: ldexp(0000000000008000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">58</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 53: ldexp(0000000000005555, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">58</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 53: ldexp(0000000000005555, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">59</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 54: ldexp(0000000000002AAA, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">59</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 54: ldexp(0000000000002AAA, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">60</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 55: ldexp(000FFFFFFFFF8000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">60</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 55: ldexp(000FFFFFFFFF8000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">61</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 56: ldexp(0005555555550000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">61</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 56: ldexp(0005555555550000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">62</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 57: ldexp(000AAAAAAAAA8000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">62</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 57: ldexp(000AAAAAAAAA8000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">63</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 58: ldexp(000FFFFFFFFF7FFF, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">63</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 58: ldexp(000FFFFFFFFF7FFF, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">64</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 59: ldexp(0005555555555555, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">64</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 59: ldexp(0005555555555555, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">65</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 60: ldexp(000AAAAAAAAA2AAA, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">65</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 60: ldexp(000AAAAAAAAA2AAA, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">66</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 61: ldexp(00000000001FFFFF, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">66</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 61: ldexp(00000000001FFFFF, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">67</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 62: ldexp(0000000000200000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">67</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 62: ldexp(0000000000200000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">68</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 63: ldexp(0000000000155555, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">68</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 63: ldexp(0000000000155555, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">69</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 64: ldexp(00000000000AAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">69</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 64: ldexp(00000000000AAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">70</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 65: ldexp(000FFFFFFFE00000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">70</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 65: ldexp(000FFFFFFFE00000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">71</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 66: ldexp(0005555555400000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">71</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 66: ldexp(0005555555400000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">72</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 67: ldexp(000AAAAAAAA00000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">72</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 67: ldexp(000AAAAAAAA00000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">73</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 68: ldexp(000FFFFFFFDFFFFF, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">73</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 68: ldexp(000FFFFFFFDFFFFF, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">74</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 69: ldexp(0005555555555555, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">74</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 69: ldexp(0005555555555555, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">75</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 70: ldexp(000AAAAAAA8AAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">75</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 70: ldexp(000AAAAAAA8AAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">76</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 71: ldexp(000000000FFFFFFF, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">76</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 71: ldexp(000000000FFFFFFF, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">77</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 72: ldexp(0000000010000000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">77</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 72: ldexp(0000000010000000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">78</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 73: ldexp(0000000005555555, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">78</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 73: ldexp(0000000005555555, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">79</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 74: ldexp(000000000AAAAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">79</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 74: ldexp(000000000AAAAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">80</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 75: ldexp(000FFFFFF0000000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">80</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 75: ldexp(000FFFFFF0000000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">81</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 76: ldexp(0005555550000000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">81</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 76: ldexp(0005555550000000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">82</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 77: ldexp(000AAAAAA0000000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">82</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 77: ldexp(000AAAAAA0000000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">83</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 78: ldexp(000FFFFFEFFFFFFF, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">83</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 78: ldexp(000FFFFFEFFFFFFF, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">84</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 79: ldexp(0005555545555555, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">84</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 79: ldexp(0005555545555555, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">85</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 80: ldexp(000AAAAAAAAAAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">85</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 80: ldexp(000AAAAAAAAAAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">86</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 81: ldexp(0000000FFFFFFFFF, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">86</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 81: ldexp(0000000FFFFFFFFF, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">87</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 82: ldexp(0000001000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">87</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 82: ldexp(0000001000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">88</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 83: ldexp(0000000555555555, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">88</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 83: ldexp(0000000555555555, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">89</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 84: ldexp(0000000AAAAAAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">89</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 84: ldexp(0000000AAAAAAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">90</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 85: ldexp(000FFFF000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">90</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 85: ldexp(000FFFF000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">91</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 86: ldexp(0005555000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">91</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 86: ldexp(0005555000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">92</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 87: ldexp(000AAAA000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">92</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 87: ldexp(000AAAA000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">93</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 88: ldexp(000FFFEFFFFFFFFF, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">93</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 88: ldexp(000FFFEFFFFFFFFF, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">94</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 89: ldexp(0005554555555555, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">94</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 89: ldexp(0005554555555555, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">95</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 90: ldexp(000AAAAAAAAAAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">95</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 90: ldexp(000AAAAAAAAAAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">96</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 91: ldexp(00001FFFFFFFFFFF, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">96</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 91: ldexp(00001FFFFFFFFFFF, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">97</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 92: ldexp(0000200000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">97</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 92: ldexp(0000200000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">98</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 93: ldexp(0000155555555555, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">98</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 93: ldexp(0000155555555555, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">99</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 94: ldexp(00000AAAAAAAAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">99</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 94: ldexp(00000AAAAAAAAAAA, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">100</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 95: ldexp(000FE00000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">100</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 95: ldexp(000FE00000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">101</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 96: ldexp(0005400000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">101</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 96: ldexp(0005400000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">102</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 97: ldexp(000AA00000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">102</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 97: ldexp(000AA00000000000, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">103</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 98: ldexp(000FDFFFFFFFFFFF, -1075) -&gt; 0000000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">103</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; 98: ldexp(000FDFFFFFFFFFFF, -1075) -&gt; 0000000000000000, errno 0</td>
+</tr>
+<tr class="SectionGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">467663</td>
+<td class="TextItemSame Wrap">467658: ldexp(FFFFFFFFFFFFFFFE, 1025) -&gt; FFFFFFFFFFFFFFFE, errno 0</td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">467663</td>
+<td class="TextItemSame Wrap">467658: ldexp(FFFFFFFFFFFFFFFE, 1025) -&gt; FFFFFFFFFFFFFFFE, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467664</td>
+<td class="TextItemSame Wrap">467659: ldexp(FFF5555555555554, 1025) -&gt; FFFD555555555554, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467664</td>
+<td class="TextItemSame Wrap">467659: ldexp(FFF5555555555554, 1025) -&gt; FFFD555555555554, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467665</td>
+<td class="TextItemSame Wrap">467660: ldexp(FFFAAAAAAAAAAAAA, 1025) -&gt; FFFAAAAAAAAAAAAA, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467665</td>
+<td class="TextItemSame Wrap">467660: ldexp(FFFAAAAAAAAAAAAA, 1025) -&gt; FFFAAAAAAAAAAAAA, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467666</td>
+<td class="TextItemSame Wrap">467661: ldexp(FFFFFFFFFFFFFFFD, 1025) -&gt; FFFFFFFFFFFFFFFD, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467666</td>
+<td class="TextItemSame Wrap">467661: ldexp(FFFFFFFFFFFFFFFD, 1025) -&gt; FFFFFFFFFFFFFFFD, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467667</td>
+<td class="TextItemSame Wrap">467662: ldexp(FFF5555555555555, 1025) -&gt; FFFD555555555555, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467667</td>
+<td class="TextItemSame Wrap">467662: ldexp(FFF5555555555555, 1025) -&gt; FFFD555555555555, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467668</td>
+<td class="TextItemSame Wrap">467663: ldexp(FFFAAAAAAAAAAAA8, 1025) -&gt; FFFAAAAAAAAAAAA8, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467668</td>
+<td class="TextItemSame Wrap">467663: ldexp(FFFAAAAAAAAAAAA8, 1025) -&gt; FFFAAAAAAAAAAAA8, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467669</td>
+<td class="TextItemSame Wrap">467664: ldexp(FFF0000000000007, 1025) -&gt; FFF8000000000007, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467669</td>
+<td class="TextItemSame Wrap">467664: ldexp(FFF0000000000007, 1025) -&gt; FFF8000000000007, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467670</td>
+<td class="TextItemSame Wrap">467665: ldexp(FFF0000000000008, 1025) -&gt; FFF8000000000008, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467670</td>
+<td class="TextItemSame Wrap">467665: ldexp(FFF0000000000008, 1025) -&gt; FFF8000000000008, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467671</td>
+<td class="TextItemSame Wrap">467666: ldexp(FFF0000000000005, 1025) -&gt; FFF8000000000005, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467671</td>
+<td class="TextItemSame Wrap">467666: ldexp(FFF0000000000005, 1025) -&gt; FFF8000000000005, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467672</td>
+<td class="TextItemSame Wrap">467667: ldexp(FFF0000000000002, 1025) -&gt; FFF8000000000002, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467672</td>
+<td class="TextItemSame Wrap">467667: ldexp(FFF0000000000002, 1025) -&gt; FFF8000000000002, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467673</td>
+<td class="TextItemSame Wrap">467668: ldexp(FFFFFFFFFFFFFFF8, 1025) -&gt; FFFFFFFFFFFFFFF8, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467673</td>
+<td class="TextItemSame Wrap">467668: ldexp(FFFFFFFFFFFFFFF8, 1025) -&gt; FFFFFFFFFFFFFFF8, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467674</td>
+<td class="TextItemSame Wrap">467669: ldexp(FFF5555555555550, 1025) -&gt; FFFD555555555550, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467674</td>
+<td class="TextItemSame Wrap">467669: ldexp(FFF5555555555550, 1025) -&gt; FFFD555555555550, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467675</td>
+<td class="TextItemSame Wrap">467670: ldexp(FFFAAAAAAAAAAAA8, 1025) -&gt; FFFAAAAAAAAAAAA8, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467675</td>
+<td class="TextItemSame Wrap">467670: ldexp(FFFAAAAAAAAAAAA8, 1025) -&gt; FFFAAAAAAAAAAAA8, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467676</td>
+<td class="TextItemSame Wrap">467671: ldexp(FFFFFFFFFFFFFFF7, 1025) -&gt; FFFFFFFFFFFFFFF7, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467676</td>
+<td class="TextItemSame Wrap">467671: ldexp(FFFFFFFFFFFFFFF7, 1025) -&gt; FFFFFFFFFFFFFFF7, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467677</td>
+<td class="TextItemSame Wrap">467672: ldexp(FFF5555555555555, 1025) -&gt; FFFD555555555555, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467677</td>
+<td class="TextItemSame Wrap">467672: ldexp(FFF5555555555555, 1025) -&gt; FFFD555555555555, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467678</td>
+<td class="TextItemSame Wrap">467673: ldexp(FFFAAAAAAAAAAAA2, 1025) -&gt; FFFAAAAAAAAAAAA2, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467678</td>
+<td class="TextItemSame Wrap">467673: ldexp(FFFAAAAAAAAAAAA2, 1025) -&gt; FFFAAAAAAAAAAAA2, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467679</td>
+<td class="TextItemSame Wrap">467674: ldexp(FFF000000000003F, 1025) -&gt; FFF800000000003F, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467679</td>
+<td class="TextItemSame Wrap">467674: ldexp(FFF000000000003F, 1025) -&gt; FFF800000000003F, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467680</td>
+<td class="TextItemSame Wrap">467675: ldexp(FFF0000000000040, 1025) -&gt; FFF8000000000040, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467680</td>
+<td class="TextItemSame Wrap">467675: ldexp(FFF0000000000040, 1025) -&gt; FFF8000000000040, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467681</td>
+<td class="TextItemSame Wrap">467676: ldexp(FFF0000000000015, 1025) -&gt; FFF8000000000015, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467681</td>
+<td class="TextItemSame Wrap">467676: ldexp(FFF0000000000015, 1025) -&gt; FFF8000000000015, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467682</td>
+<td class="TextItemSame Wrap">467677: ldexp(FFF000000000002A, 1025) -&gt; FFF800000000002A, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467682</td>
+<td class="TextItemSame Wrap">467677: ldexp(FFF000000000002A, 1025) -&gt; FFF800000000002A, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467683</td>
+<td class="TextItemSame Wrap">467678: ldexp(FFFFFFFFFFFFFFC0, 1025) -&gt; FFFFFFFFFFFFFFC0, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467683</td>
+<td class="TextItemSame Wrap">467678: ldexp(FFFFFFFFFFFFFFC0, 1025) -&gt; FFFFFFFFFFFFFFC0, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467684</td>
+<td class="TextItemSame Wrap">467679: ldexp(FFF5555555555540, 1025) -&gt; FFFD555555555540, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467684</td>
+<td class="TextItemSame Wrap">467679: ldexp(FFF5555555555540, 1025) -&gt; FFFD555555555540, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467685</td>
+<td class="TextItemSame Wrap">467680: ldexp(FFFAAAAAAAAAAA80, 1025) -&gt; FFFAAAAAAAAAAA80, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467685</td>
+<td class="TextItemSame Wrap">467680: ldexp(FFFAAAAAAAAAAA80, 1025) -&gt; FFFAAAAAAAAAAA80, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467686</td>
+<td class="TextItemSame Wrap">467681: ldexp(FFFFFFFFFFFFFFBF, 1025) -&gt; FFFFFFFFFFFFFFBF, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467686</td>
+<td class="TextItemSame Wrap">467681: ldexp(FFFFFFFFFFFFFFBF, 1025) -&gt; FFFFFFFFFFFFFFBF, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467687</td>
+<td class="TextItemSame Wrap">467682: ldexp(FFF5555555555515, 1025) -&gt; FFFD555555555515, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467687</td>
+<td class="TextItemSame Wrap">467682: ldexp(FFF5555555555515, 1025) -&gt; FFFD555555555515, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467688</td>
+<td class="TextItemSame Wrap">467683: ldexp(FFFAAAAAAAAAAAAA, 1025) -&gt; FFFAAAAAAAAAAAAA, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467688</td>
+<td class="TextItemSame Wrap">467683: ldexp(FFFAAAAAAAAAAAAA, 1025) -&gt; FFFAAAAAAAAAAAAA, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467689</td>
+<td class="TextItemSame Wrap">467684: ldexp(FFF00000000003FF, 1025) -&gt; FFF80000000003FF, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467689</td>
+<td class="TextItemSame Wrap">467684: ldexp(FFF00000000003FF, 1025) -&gt; FFF80000000003FF, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467690</td>
+<td class="TextItemSame Wrap">467685: ldexp(FFF0000000000400, 1025) -&gt; FFF8000000000400, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467690</td>
+<td class="TextItemSame Wrap">467685: ldexp(FFF0000000000400, 1025) -&gt; FFF8000000000400, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467691</td>
+<td class="TextItemSame Wrap">467686: ldexp(FFF0000000000155, 1025) -&gt; FFF8000000000155, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467691</td>
+<td class="TextItemSame Wrap">467686: ldexp(FFF0000000000155, 1025) -&gt; FFF8000000000155, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467692</td>
+<td class="TextItemSame Wrap">467687: ldexp(FFF00000000002AA, 1025) -&gt; FFF80000000002AA, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467692</td>
+<td class="TextItemSame Wrap">467687: ldexp(FFF00000000002AA, 1025) -&gt; FFF80000000002AA, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467693</td>
+<td class="TextItemSame Wrap">467688: ldexp(FFFFFFFFFFFFFC00, 1025) -&gt; FFFFFFFFFFFFFC00, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467693</td>
+<td class="TextItemSame Wrap">467688: ldexp(FFFFFFFFFFFFFC00, 1025) -&gt; FFFFFFFFFFFFFC00, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467694</td>
+<td class="TextItemSame Wrap">467689: ldexp(FFF5555555555400, 1025) -&gt; FFFD555555555400, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467694</td>
+<td class="TextItemSame Wrap">467689: ldexp(FFF5555555555400, 1025) -&gt; FFFD555555555400, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467695</td>
+<td class="TextItemSame Wrap">467690: ldexp(FFFAAAAAAAAAA800, 1025) -&gt; FFFAAAAAAAAAA800, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467695</td>
+<td class="TextItemSame Wrap">467690: ldexp(FFFAAAAAAAAAA800, 1025) -&gt; FFFAAAAAAAAAA800, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467696</td>
+<td class="TextItemSame Wrap">467691: ldexp(FFFFFFFFFFFFFBFF, 1025) -&gt; FFFFFFFFFFFFFBFF, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467696</td>
+<td class="TextItemSame Wrap">467691: ldexp(FFFFFFFFFFFFFBFF, 1025) -&gt; FFFFFFFFFFFFFBFF, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467697</td>
+<td class="TextItemSame Wrap">467692: ldexp(FFF5555555555155, 1025) -&gt; FFFD555555555155, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467697</td>
+<td class="TextItemSame Wrap">467692: ldexp(FFF5555555555155, 1025) -&gt; FFFD555555555155, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467698</td>
+<td class="TextItemSame Wrap">467693: ldexp(FFFAAAAAAAAAAAAA, 1025) -&gt; FFFAAAAAAAAAAAAA, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467698</td>
+<td class="TextItemSame Wrap">467693: ldexp(FFFAAAAAAAAAAAAA, 1025) -&gt; FFFAAAAAAAAAAAAA, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467699</td>
+<td class="TextItemSame Wrap">467694: ldexp(FFF0000000007FFF, 1025) -&gt; FFF8000000007FFF, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467699</td>
+<td class="TextItemSame Wrap">467694: ldexp(FFF0000000007FFF, 1025) -&gt; FFF8000000007FFF, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467700</td>
+<td class="TextItemSame Wrap">467695: ldexp(FFF0000000008000, 1025) -&gt; FFF8000000008000, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467700</td>
+<td class="TextItemSame Wrap">467695: ldexp(FFF0000000008000, 1025) -&gt; FFF8000000008000, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467701</td>
+<td class="TextItemSame Wrap">467696: ldexp(FFF0000000005555, 1025) -&gt; FFF8000000005555, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467701</td>
+<td class="TextItemSame Wrap">467696: ldexp(FFF0000000005555, 1025) -&gt; FFF8000000005555, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467702</td>
+<td class="TextItemSame Wrap">467697: ldexp(FFF0000000002AAA, 1025) -&gt; FFF8000000002AAA, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467702</td>
+<td class="TextItemSame Wrap">467697: ldexp(FFF0000000002AAA, 1025) -&gt; FFF8000000002AAA, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467703</td>
+<td class="TextItemSame Wrap">467698: ldexp(FFFFFFFFFFFF8000, 1025) -&gt; FFFFFFFFFFFF8000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467703</td>
+<td class="TextItemSame Wrap">467698: ldexp(FFFFFFFFFFFF8000, 1025) -&gt; FFFFFFFFFFFF8000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467704</td>
+<td class="TextItemSame Wrap">467699: ldexp(FFF5555555550000, 1025) -&gt; FFFD555555550000, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467704</td>
+<td class="TextItemSame Wrap">467699: ldexp(FFF5555555550000, 1025) -&gt; FFFD555555550000, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467705</td>
+<td class="TextItemSame Wrap">467700: ldexp(FFFAAAAAAAAA8000, 1025) -&gt; FFFAAAAAAAAA8000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467705</td>
+<td class="TextItemSame Wrap">467700: ldexp(FFFAAAAAAAAA8000, 1025) -&gt; FFFAAAAAAAAA8000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467706</td>
+<td class="TextItemSame Wrap">467701: ldexp(FFFFFFFFFFFF7FFF, 1025) -&gt; FFFFFFFFFFFF7FFF, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467706</td>
+<td class="TextItemSame Wrap">467701: ldexp(FFFFFFFFFFFF7FFF, 1025) -&gt; FFFFFFFFFFFF7FFF, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467707</td>
+<td class="TextItemSame Wrap">467702: ldexp(FFF5555555555555, 1025) -&gt; FFFD555555555555, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467707</td>
+<td class="TextItemSame Wrap">467702: ldexp(FFF5555555555555, 1025) -&gt; FFFD555555555555, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467708</td>
+<td class="TextItemSame Wrap">467703: ldexp(FFFAAAAAAAAA2AAA, 1025) -&gt; FFFAAAAAAAAA2AAA, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467708</td>
+<td class="TextItemSame Wrap">467703: ldexp(FFFAAAAAAAAA2AAA, 1025) -&gt; FFFAAAAAAAAA2AAA, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467709</td>
+<td class="TextItemSame Wrap">467704: ldexp(FFF00000001FFFFF, 1025) -&gt; FFF80000001FFFFF, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467709</td>
+<td class="TextItemSame Wrap">467704: ldexp(FFF00000001FFFFF, 1025) -&gt; FFF80000001FFFFF, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467710</td>
+<td class="TextItemSame Wrap">467705: ldexp(FFF0000000200000, 1025) -&gt; FFF8000000200000, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467710</td>
+<td class="TextItemSame Wrap">467705: ldexp(FFF0000000200000, 1025) -&gt; FFF8000000200000, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467711</td>
+<td class="TextItemSame Wrap">467706: ldexp(FFF0000000155555, 1025) -&gt; FFF8000000155555, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467711</td>
+<td class="TextItemSame Wrap">467706: ldexp(FFF0000000155555, 1025) -&gt; FFF8000000155555, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467712</td>
+<td class="TextItemSame Wrap">467707: ldexp(FFF00000000AAAAA, 1025) -&gt; FFF80000000AAAAA, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467712</td>
+<td class="TextItemSame Wrap">467707: ldexp(FFF00000000AAAAA, 1025) -&gt; FFF80000000AAAAA, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467713</td>
+<td class="TextItemSame Wrap">467708: ldexp(FFFFFFFFFFE00000, 1025) -&gt; FFFFFFFFFFE00000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467713</td>
+<td class="TextItemSame Wrap">467708: ldexp(FFFFFFFFFFE00000, 1025) -&gt; FFFFFFFFFFE00000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467714</td>
+<td class="TextItemSame Wrap">467709: ldexp(FFF5555555400000, 1025) -&gt; FFFD555555400000, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467714</td>
+<td class="TextItemSame Wrap">467709: ldexp(FFF5555555400000, 1025) -&gt; FFFD555555400000, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467715</td>
+<td class="TextItemSame Wrap">467710: ldexp(FFFAAAAAAAA00000, 1025) -&gt; FFFAAAAAAAA00000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467715</td>
+<td class="TextItemSame Wrap">467710: ldexp(FFFAAAAAAAA00000, 1025) -&gt; FFFAAAAAAAA00000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467716</td>
+<td class="TextItemSame Wrap">467711: ldexp(FFFFFFFFFFDFFFFF, 1025) -&gt; FFFFFFFFFFDFFFFF, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467716</td>
+<td class="TextItemSame Wrap">467711: ldexp(FFFFFFFFFFDFFFFF, 1025) -&gt; FFFFFFFFFFDFFFFF, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467717</td>
+<td class="TextItemSame Wrap">467712: ldexp(FFF5555555555555, 1025) -&gt; FFFD555555555555, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467717</td>
+<td class="TextItemSame Wrap">467712: ldexp(FFF5555555555555, 1025) -&gt; FFFD555555555555, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467718</td>
+<td class="TextItemSame Wrap">467713: ldexp(FFFAAAAAAA8AAAAA, 1025) -&gt; FFFAAAAAAA8AAAAA, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467718</td>
+<td class="TextItemSame Wrap">467713: ldexp(FFFAAAAAAA8AAAAA, 1025) -&gt; FFFAAAAAAA8AAAAA, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467719</td>
+<td class="TextItemSame Wrap">467714: ldexp(FFF000000FFFFFFF, 1025) -&gt; FFF800000FFFFFFF, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467719</td>
+<td class="TextItemSame Wrap">467714: ldexp(FFF000000FFFFFFF, 1025) -&gt; FFF800000FFFFFFF, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467720</td>
+<td class="TextItemSame Wrap">467715: ldexp(FFF0000010000000, 1025) -&gt; FFF8000010000000, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467720</td>
+<td class="TextItemSame Wrap">467715: ldexp(FFF0000010000000, 1025) -&gt; FFF8000010000000, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467721</td>
+<td class="TextItemSame Wrap">467716: ldexp(FFF0000005555555, 1025) -&gt; FFF8000005555555, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467721</td>
+<td class="TextItemSame Wrap">467716: ldexp(FFF0000005555555, 1025) -&gt; FFF8000005555555, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467722</td>
+<td class="TextItemSame Wrap">467717: ldexp(FFF000000AAAAAAA, 1025) -&gt; FFF800000AAAAAAA, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467722</td>
+<td class="TextItemSame Wrap">467717: ldexp(FFF000000AAAAAAA, 1025) -&gt; FFF800000AAAAAAA, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467723</td>
+<td class="TextItemSame Wrap">467718: ldexp(FFFFFFFFF0000000, 1025) -&gt; FFFFFFFFF0000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467723</td>
+<td class="TextItemSame Wrap">467718: ldexp(FFFFFFFFF0000000, 1025) -&gt; FFFFFFFFF0000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467724</td>
+<td class="TextItemSame Wrap">467719: ldexp(FFF5555550000000, 1025) -&gt; FFFD555550000000, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467724</td>
+<td class="TextItemSame Wrap">467719: ldexp(FFF5555550000000, 1025) -&gt; FFFD555550000000, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467725</td>
+<td class="TextItemSame Wrap">467720: ldexp(FFFAAAAAA0000000, 1025) -&gt; FFFAAAAAA0000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467725</td>
+<td class="TextItemSame Wrap">467720: ldexp(FFFAAAAAA0000000, 1025) -&gt; FFFAAAAAA0000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467726</td>
+<td class="TextItemSame Wrap">467721: ldexp(FFFFFFFFEFFFFFFF, 1025) -&gt; FFFFFFFFEFFFFFFF, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467726</td>
+<td class="TextItemSame Wrap">467721: ldexp(FFFFFFFFEFFFFFFF, 1025) -&gt; FFFFFFFFEFFFFFFF, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467727</td>
+<td class="TextItemSame Wrap">467722: ldexp(FFF5555545555555, 1025) -&gt; FFFD555545555555, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467727</td>
+<td class="TextItemSame Wrap">467722: ldexp(FFF5555545555555, 1025) -&gt; FFFD555545555555, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467728</td>
+<td class="TextItemSame Wrap">467723: ldexp(FFFAAAAAAAAAAAAA, 1025) -&gt; FFFAAAAAAAAAAAAA, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467728</td>
+<td class="TextItemSame Wrap">467723: ldexp(FFFAAAAAAAAAAAAA, 1025) -&gt; FFFAAAAAAAAAAAAA, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467729</td>
+<td class="TextItemSame Wrap">467724: ldexp(FFF0000FFFFFFFFF, 1025) -&gt; FFF8000FFFFFFFFF, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467729</td>
+<td class="TextItemSame Wrap">467724: ldexp(FFF0000FFFFFFFFF, 1025) -&gt; FFF8000FFFFFFFFF, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467730</td>
+<td class="TextItemSame Wrap">467725: ldexp(FFF0001000000000, 1025) -&gt; FFF8001000000000, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467730</td>
+<td class="TextItemSame Wrap">467725: ldexp(FFF0001000000000, 1025) -&gt; FFF8001000000000, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467731</td>
+<td class="TextItemSame Wrap">467726: ldexp(FFF0000555555555, 1025) -&gt; FFF8000555555555, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467731</td>
+<td class="TextItemSame Wrap">467726: ldexp(FFF0000555555555, 1025) -&gt; FFF8000555555555, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467732</td>
+<td class="TextItemSame Wrap">467727: ldexp(FFF0000AAAAAAAAA, 1025) -&gt; FFF8000AAAAAAAAA, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467732</td>
+<td class="TextItemSame Wrap">467727: ldexp(FFF0000AAAAAAAAA, 1025) -&gt; FFF8000AAAAAAAAA, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467733</td>
+<td class="TextItemSame Wrap">467728: ldexp(FFFFFFF000000000, 1025) -&gt; FFFFFFF000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467733</td>
+<td class="TextItemSame Wrap">467728: ldexp(FFFFFFF000000000, 1025) -&gt; FFFFFFF000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467734</td>
+<td class="TextItemSame Wrap">467729: ldexp(FFF5555000000000, 1025) -&gt; FFFD555000000000, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467734</td>
+<td class="TextItemSame Wrap">467729: ldexp(FFF5555000000000, 1025) -&gt; FFFD555000000000, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467735</td>
+<td class="TextItemSame Wrap">467730: ldexp(FFFAAAA000000000, 1025) -&gt; FFFAAAA000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467735</td>
+<td class="TextItemSame Wrap">467730: ldexp(FFFAAAA000000000, 1025) -&gt; FFFAAAA000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467736</td>
+<td class="TextItemSame Wrap">467731: ldexp(FFFFFFEFFFFFFFFF, 1025) -&gt; FFFFFFEFFFFFFFFF, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467736</td>
+<td class="TextItemSame Wrap">467731: ldexp(FFFFFFEFFFFFFFFF, 1025) -&gt; FFFFFFEFFFFFFFFF, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467737</td>
+<td class="TextItemSame Wrap">467732: ldexp(FFF5554555555555, 1025) -&gt; FFFD554555555555, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467737</td>
+<td class="TextItemSame Wrap">467732: ldexp(FFF5554555555555, 1025) -&gt; FFFD554555555555, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467738</td>
+<td class="TextItemSame Wrap">467733: ldexp(FFFAAAAAAAAAAAAA, 1025) -&gt; FFFAAAAAAAAAAAAA, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467738</td>
+<td class="TextItemSame Wrap">467733: ldexp(FFFAAAAAAAAAAAAA, 1025) -&gt; FFFAAAAAAAAAAAAA, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467739</td>
+<td class="TextItemSame Wrap">467734: ldexp(FFF01FFFFFFFFFFF, 1025) -&gt; FFF81FFFFFFFFFFF, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467739</td>
+<td class="TextItemSame Wrap">467734: ldexp(FFF01FFFFFFFFFFF, 1025) -&gt; FFF81FFFFFFFFFFF, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467740</td>
+<td class="TextItemSame Wrap">467735: ldexp(FFF0200000000000, 1025) -&gt; FFF8200000000000, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467740</td>
+<td class="TextItemSame Wrap">467735: ldexp(FFF0200000000000, 1025) -&gt; FFF8200000000000, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467741</td>
+<td class="TextItemSame Wrap">467736: ldexp(FFF0155555555555, 1025) -&gt; FFF8155555555555, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467741</td>
+<td class="TextItemSame Wrap">467736: ldexp(FFF0155555555555, 1025) -&gt; FFF8155555555555, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467742</td>
+<td class="TextItemSame Wrap">467737: ldexp(FFF00AAAAAAAAAAA, 1025) -&gt; FFF80AAAAAAAAAAA, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467742</td>
+<td class="TextItemSame Wrap">467737: ldexp(FFF00AAAAAAAAAAA, 1025) -&gt; FFF80AAAAAAAAAAA, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467743</td>
+<td class="TextItemSame Wrap">467738: ldexp(FFFFE00000000000, 1025) -&gt; FFFFE00000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467743</td>
+<td class="TextItemSame Wrap">467738: ldexp(FFFFE00000000000, 1025) -&gt; FFFFE00000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467744</td>
+<td class="TextItemSame Wrap">467739: ldexp(FFF5400000000000, 1025) -&gt; FFFD400000000000, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467744</td>
+<td class="TextItemSame Wrap">467739: ldexp(FFF5400000000000, 1025) -&gt; FFFD400000000000, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467745</td>
+<td class="TextItemSame Wrap">467740: ldexp(FFFAA00000000000, 1025) -&gt; FFFAA00000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467745</td>
+<td class="TextItemSame Wrap">467740: ldexp(FFFAA00000000000, 1025) -&gt; FFFAA00000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467746</td>
+<td class="TextItemSame Wrap">467741: ldexp(FFFFDFFFFFFFFFFF, 1025) -&gt; FFFFDFFFFFFFFFFF, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467746</td>
+<td class="TextItemSame Wrap">467741: ldexp(FFFFDFFFFFFFFFFF, 1025) -&gt; FFFFDFFFFFFFFFFF, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467747</td>
+<td class="TextItemSame Wrap">467742: ldexp(FFF5555555555555, 1025) -&gt; FFFD555555555555, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467747</td>
+<td class="TextItemSame Wrap">467742: ldexp(FFF5555555555555, 1025) -&gt; FFFD555555555555, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467748</td>
+<td class="TextItemSame Wrap">467743: ldexp(FFFA8AAAAAAAAAAA, 1025) -&gt; FFFA8AAAAAAAAAAA, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467748</td>
+<td class="TextItemSame Wrap">467743: ldexp(FFFA8AAAAAAAAAAA, 1025) -&gt; FFFA8AAAAAAAAAAA, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467749</td>
+<td class="TextItemSame Wrap">467744: ldexp(FFF7FFFFFFFFFFFF, 1025) -&gt; FFFFFFFFFFFFFFFF, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467749</td>
+<td class="TextItemSame Wrap">467744: ldexp(FFF7FFFFFFFFFFFF, 1025) -&gt; FFFFFFFFFFFFFFFF, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467750</td>
+<td class="TextItemSame Wrap">467745: ldexp(FFF8000000000000, 1025) -&gt; FFF8000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467750</td>
+<td class="TextItemSame Wrap">467745: ldexp(FFF8000000000000, 1025) -&gt; FFF8000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467751</td>
+<td class="TextItemSame Wrap">467746: ldexp(FFF5555555555555, 1025) -&gt; FFFD555555555555, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467751</td>
+<td class="TextItemSame Wrap">467746: ldexp(FFF5555555555555, 1025) -&gt; FFFD555555555555, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467752</td>
+<td class="TextItemSame Wrap">467747: ldexp(FFF2AAAAAAAAAAAA, 1025) -&gt; FFFAAAAAAAAAAAAA, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467752</td>
+<td class="TextItemSame Wrap">467747: ldexp(FFF2AAAAAAAAAAAA, 1025) -&gt; FFFAAAAAAAAAAAAA, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467753</td>
+<td class="TextItemSame Wrap">467748: ldexp(FFF8000000000000, 1025) -&gt; FFF8000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467753</td>
+<td class="TextItemSame Wrap">467748: ldexp(FFF8000000000000, 1025) -&gt; FFF8000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467754</td>
+<td class="TextItemSame Wrap">467749: ldexp(FFF0000000000000, 1025) -&gt; FFF0000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467754</td>
+<td class="TextItemSame Wrap">467749: ldexp(FFF0000000000000, 1025) -&gt; FFF0000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467755</td>
+<td class="TextItemSame Wrap">467750: ldexp(FFF8000000000000, 1025) -&gt; FFF8000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467755</td>
+<td class="TextItemSame Wrap">467750: ldexp(FFF8000000000000, 1025) -&gt; FFF8000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467756</td>
+<td class="TextItemSame Wrap">467751: ldexp(FFF7FFFFFFFFFFFF, 1025) -&gt; FFFFFFFFFFFFFFFF, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467756</td>
+<td class="TextItemSame Wrap">467751: ldexp(FFF7FFFFFFFFFFFF, 1025) -&gt; FFFFFFFFFFFFFFFF, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467757</td>
+<td class="TextItemSame Wrap">467752: ldexp(FFF5555555555555, 1025) -&gt; FFFD555555555555, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467757</td>
+<td class="TextItemSame Wrap">467752: ldexp(FFF5555555555555, 1025) -&gt; FFFD555555555555, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467758</td>
+<td class="TextItemSame Wrap">467753: ldexp(FFF2AAAAAAAAAAAA, 1025) -&gt; FFFAAAAAAAAAAAAA, errno 33</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467758</td>
+<td class="TextItemSame Wrap">467753: ldexp(FFF2AAAAAAAAAAAA, 1025) -&gt; FFFAAAAAAAAAAAAA, errno 33</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467759</td>
+<td class="TextItemSame Wrap">467754: ldexp(FFF8000000000000, 1025) -&gt; FFF8000000000000, errno 0</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467759</td>
+<td class="TextItemSame Wrap">467754: ldexp(FFF8000000000000, 1025) -&gt; FFF8000000000000, errno 0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">467760</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467760</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">467761</td>
+<td class="TextItemSame Wrap">############################################################</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467761</td>
+<td class="TextItemSame Wrap">############################################################</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">467762</td>
+<td class="TextItemSigMod Wrap">current date and time: 2025-08-30 15:<span class="TextSegSigDiff">19:17</span></td>
+<td class="AlignCenter Wrap">&lt;&gt;</td>
+<td class="TextItemNum AlignRight Wrap">467762</td>
+<td class="TextItemSigMod Wrap">current date and time: 2025-08-30 15:<span class="TextSegSigDiff">20:32</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">467763</td>
+<td class="TextItemSame Wrap">overall measured samples: 467754</td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">467763</td>
+<td class="TextItemSame Wrap">overall measured samples: 467754</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">467764</td>
+<td class="TextItemSame Wrap">logged samples: 467754</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">467764</td>
+<td class="TextItemSame Wrap">logged samples: 467754</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">467765</td>
+<td class="TextItemSigMod Wrap">processing time: 00:00:0<span class="TextSegSigDiff">5</span></td>
+<td class="AlignCenter Wrap">&lt;&gt;</td>
+<td class="TextItemNum AlignRight Wrap">467765</td>
+<td class="TextItemSigMod Wrap">processing time: 00:00:0<span class="TextSegSigDiff">1</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">467766</td>
+<td class="TextItemSame Wrap">############################################################</td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">467766</td>
+<td class="TextItemSame Wrap">############################################################</td>
+</tr>
+</table>
+<br>
+</body>
+</html>
