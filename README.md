@@ -4,8 +4,8 @@ toro C-Validation-Suite reports
 ### Table of content
 * [Preface](README.md#Preface)
 * [Basic concept](README.md#basic-concept)
-* [Introduction: math.h](README.md#Introduction-math-h)
-    * [Test results: math.h](README.md#testresults-mathh)
+* [Introduction: math.h](README.md#introduction-mathh)
+    * [Test results: math.h](README.md#test-results-mathh)
 
 
 ## Preface
