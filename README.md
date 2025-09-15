@@ -34,29 +34,31 @@ These natural differences arise because the respective libraries use different a
 ![](documents/powdiff2.png)
 
 ## Test results: math.h
-The test results of all **math.h** functions can be found here:
+The test results of all **math.h** functions **toro C Library** vs. **Microsoft C Library** are compared for each function in the table below:<br>
+(to keep diff file size small, only 15 lines around differences are shown)<br>
 
-(to keep diff file size small, only 15 lines around differences are shown)
-
-* [**acos()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/acos.html)
-* [**asin()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/asin.html)
-* [**atan()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/atan.html)
-* [**atan2()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/atan2.html)
-* [**ceil()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/ceil.html)
-* [**cos()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/cos.html)
-* [**cosh()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/cosh.html)
-* [**exp()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/exp.html)
-* [**fabs()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/fabs.html)
-* [**floor()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/floor.html)
-* [**fmod()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/fmod.html)
-* [**frexp()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/frexp.html)
-* [**ldexp()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/ldexp.html)
-* [**log()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/log.html)
-* [**log10()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/log10.html)
-* [**modf()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/modf.html)
-* [**pow()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/pow.html)
-* [**sin()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/sin.html)
-* [**sinh()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/sinh.html)
-* [**sqrt()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/sqrt.html)
-* [**tan()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/tan.html)
-* [**tanh()**](https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/tanh.html)
+<table>
+<th>toro C Library </th> <th >MSFT C Library</th>
+<tr><th colspan="2"><a href=https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/acos.html>acos()</a></th></tr>
+<tr><th colspan="2"><a href=https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/asin.html>asin()</a></th></tr>
+<tr><th colspan="2"><a href=https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/atan.html>atan()</a></th></tr>
+<tr><th colspan="2"><a href=https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/atan2.html>atan2()</a></th></tr>
+<tr><th colspan="2"><a href=https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/ceil.html>ceil()</a></th></tr>
+<tr><th colspan="2"><a href=https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/cos.html>cos()</a></th></tr>
+<tr><th colspan="2"><a href=https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/cosh.html>cosh()</a></th></tr>
+<tr><th colspan="2"><a href=https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/exp.html>exp()</a></th></tr>
+<tr><th colspan="2"><a href=https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/fabs.html>fabs()</a></th></tr>
+<tr><th colspan="2"><a href=https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/floor.html>floor()</a></th></tr>
+<tr><th colspan="2"><a href=https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/fmod.html>fmod()</a></th></tr>
+<tr><th colspan="2"><a href=https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/frexp.html>frexp()</a></th></tr>
+<tr><th colspan="2"><a href=https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/ldexp.html>ldexp()</a></th></tr>
+<tr><th colspan="2"><a href=https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/log.html>log()</a></th></tr>
+<tr><th colspan="2"><a href=https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/log10.html>log10()</a></th></tr>
+<tr><th colspan="2"><a href=https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/modf.html>modf()</a></th></tr>
+<tr><th colspan="2"><a href=https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/pow.html>pow()</a></th></tr>
+<tr><th colspan="2"><a href=https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/sin.html>sin()</a></th></tr>
+<tr><th colspan="2"><a href=https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/sinh.html>sinh()</a></th></tr>
+<tr><th colspan="2"><a href=https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/sqrt.html>sqrt()</a></th></tr>
+<tr><th colspan="2"><a href=https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/tan.html>tan()</a></th></tr>
+<tr><th colspan="2"><a href=https://cdn.githubraw.com/KilianKegel/toroCVSreport/main/report/math_h/x64/tanh.html>tanh()</a></th></tr>
+</table
